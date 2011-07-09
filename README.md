@@ -19,8 +19,8 @@ Core IO specs:
  - 8 standard 'core' analogue inputs 
  - 2 ignition drives (driver chips for external igniters, spare 2 channels if space permits)
  - 4 injector drives (high-z, spare 4 channels if space permits)
- - 4 ground "input" connections (CPU GND, INJ GND, ACC GND, IGN GND)
- - 5 "12V" connections (constant CPU power, switched INJ power/ACC power/IGN power/key-on)
+ - 3 ground "input" connections (CPU GND, INJ GND, ACC GND)
+ - 2 "12V" connections (constant CPU power, switched BRV power/key-on signal)
  - 2 overkill relay drive's (fan and fuel pump)
  - 6 (or more) ground output pins for (external MAP, TPS, IAT, CHT, MAT, CAS)
  - 3 RPM/Position input grounds for VR use
