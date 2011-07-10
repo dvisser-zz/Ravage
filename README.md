@@ -7,6 +7,8 @@ is to create a hardware solution for FreeEMS that caters to the needs of the Toy
 4AGE engines (16V and 20V). It may also be used on most 4 cylinder setups with minimal
 to no modifications required. 
 
+Ideally, at the end of the day, I am hoping that future developments in software allow for full sequential injection AND ignition. If PCB size becomes an issue, the bare minimum number of igniter and injector channels will be 4 of each and spare low side drives etc will be removed to make way for these. 
+
 Please see [FreeEMS.org](http://freeems.org) for the most up to date information
 and links for this project and all of the other aspects of the FreeEMS project.
 
@@ -23,8 +25,9 @@ Core IO specs:
  - 2 "12V" connections (constant CPU power, switched BRV power/key-on signal)
  - 2 overkill relay drive's (fan and fuel pump)
  - 6 (or more) ground output pins for (external MAP, TPS, IAT, CHT, MAT, CAS)
- - 3 RPM/Position input grounds for VR use
  - 1 switched 5V outputs for TPS
+
+PCB Size is to be as small as possible, but attention must be paid to what connector is chosen as this will more than likely be the deciding factor on the overall size. Worst-case scenario will be a PCB that is 100mm x 80mm, which is still small and allows for the use of some sort of "nice" connector. It could be made smaller, but if I make it 100mm x 80mm then I will have room for extra spare drives, etc. 
 
 ### Changes
 
