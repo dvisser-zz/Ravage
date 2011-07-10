@@ -1,8 +1,8 @@
-# Ravage - A 4AGE specific hardware solution for FreeEMS.
+# RavAGE - A 4AGE specific hardware solution for FreeEMS.
 
 ### Introduction
 
-The name "Ravage" is something relating to 4-'AGE'. The aim of the Ravage project
+The name "RavAGE" is something relating to 4-'AGE'. The aim of the RavAGE project
 is to create a hardware solution for FreeEMS that caters to the needs of the Toyota
 4AGE engines (16V and 20V). It may also be used on most 4 cylinder setups with minimal
 to no modifications required. 
@@ -32,5 +32,5 @@ PCB Size is to be as small as possible, but attention must be paid to what conne
 
 ### Changes
 
-Please send any changes that you make to Ravage back upstream to [Dan Visser's copy](https://github.com/dvisser/Ravage)
+Please send any changes that you make to RavAGE back upstream to [Dan Visser's copy](https://github.com/dvisser/Ravage)
 
