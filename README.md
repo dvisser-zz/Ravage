@@ -26,6 +26,7 @@ Core IO specs:
  - 2 overkill relay drive's (fan and fuel pump)
  - 6 (or more) ground output pins for (TPS, IAT, CHT, MAT, CAS)
  - 1 switched 5V outputs for TPS
+ - 1 output suitable for driving a 3-wire Toyota Idle Speed Control Valve (+12V, PWM Non-Inverted and PWM Inverted)
 
 PCB Size is to be as small as possible, but attention must be paid to what connector is chosen as this will more than likely be the deciding factor on the overall size. Worst-case scenario will be a PCB that is 100mm x 80mm, which is still small and allows for the use of some sort of "nice" connector. It could be made smaller, but if I make it 100mm x 80mm then I will have room for extra spare drives, etc. 
 
