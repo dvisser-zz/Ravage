@@ -262,7 +262,7 @@ Variant=[No Variations]
 GenerateBOM=0
 
 [Generic_SmartPDF]
-AutoOpenFile=-1
+AutoOpenFile=0
 AutoOpenOutJob=-1
 
 [Generic_SmartPDFSettings]
