@@ -6,8 +6,9 @@
 *.PrjPCBStructure
 *.PcbDoc.htm/Altium/
 */Project\ Logs\ for\ 
-*//Altium/
-*//History/
+*/Altium/
+*/History/
 */Project\ Outputs\ for\ 
-*//Altium/History//Altium/
+*/Altium/History/Altium/
 */History/Thumbs.db
+*.OutJob
