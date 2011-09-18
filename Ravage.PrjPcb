@@ -94,20 +94,6 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 
 [Document6]
-DocumentPath=Analog Inputs 0-7.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-
-[Document7]
 DocumentPath=Low Side Drivers.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -121,7 +107,7 @@ ClassGenCCAutoEnabled=1
 ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 
-[Document8]
+[Document7]
 DocumentPath=Power Supplies.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -135,8 +121,22 @@ ClassGenCCAutoEnabled=1
 ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 
+[Document8]
+DocumentPath=Analog Inputs 0-7.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+
 [Document9]
-DocumentPath=USB Comms.SchDoc
+DocumentPath=Analog Inputs 8-15.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -150,7 +150,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 
 [Document10]
-DocumentPath=Analog Inputs 8-15.SchDoc
+DocumentPath=USB Comms.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -244,8 +244,8 @@ AutoOpenOutJob=-1
 ProjectMode=-1
 ZoomPrecision=50
 AddNetsInformation=-1
-AddNetPins=-1
-AddNetNetLabels=-1
+AddNetPins=0
+AddNetNetLabels=0
 AddNetPorts=-1
 ExportBOM=0
 TemplateFilename=
@@ -256,7 +256,7 @@ SCH_ShowParameter=-1
 SCH_ShowProbes=-1
 SCH_ShowBlankets=-1
 SCH_ExpandLogicalToPhysical=0
-SCH_VariantName=[No Variations]
+SCH_VariantName=[None]
 SCH_ExpandComponentDesignators=-1
 SCH_ExpandNetlabels=0
 SCH_ExpandPorts=0
@@ -264,6 +264,8 @@ SCH_ExpandSheetNumber=0
 SCH_ExpandDocumentNumber=0
 SCH_HasExpandLogicalToPhysicalSheets=-1
 SaveSettingsToOutJob=0
+SCH_PrintColor=0
+OutputFileName=RAVAGE.PRJPCB=C:\Users\EL_PRESTO\Desktop\WORKSPACE\FreeEMS\PRESTON-RAVAGE\Ravage\Ravage.pdf
 
 [OutputGroup1]
 Name=Netlist Outputs
