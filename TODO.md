@@ -8,7 +8,7 @@ every change as there is no benefit and a binary repository size drawback.
 Done - Components and connections on CPU page: http://forum.diyefi.org/viewtopic.php?p=17767#p17767
  - Annotations of CPU sheet components from: http://forum.diyefi.org/viewtopic.php?p=17767#p17767
 Done - Analogue capacitor values from: http://forum.diyefi.org/viewtopic.php?p=17706#p17706
- - Wakeup circuit supply voltage source from: http://forum.diyefi.org/viewtopic.php?p=17706#p17706
+Done - Wakeup circuit supply voltage source from: http://forum.diyefi.org/viewtopic.php?p=17706#p17706
  - Ignitor output LED connection from: http://forum.diyefi.org/viewtopic.php?p=17706#p17706
  - Injector drive pull down resistors from: http://forum.diyefi.org/viewtopic.php?p=17706#p17706
  - Add (5.6V) zener protection of 5V rails from: http://forum.diyefi.org/viewtopic.php?p=17706#p17706
