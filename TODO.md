@@ -5,7 +5,7 @@ file and the changed files committed together. After a session of N changes the
 PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
- - Components and connections on CPU page: http://forum.diyefi.org/viewtopic.php?p=17767#p17767
+Done - Components and connections on CPU page: http://forum.diyefi.org/viewtopic.php?p=17767#p17767
  - Annotations of CPU sheet components from: http://forum.diyefi.org/viewtopic.php?p=17767#p17767
  - Analogue capacitor values from: http://forum.diyefi.org/viewtopic.php?p=17706#p17706
  - Wakeup circuit supply voltage source from: http://forum.diyefi.org/viewtopic.php?p=17706#p17706
