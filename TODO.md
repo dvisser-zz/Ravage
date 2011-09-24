@@ -6,7 +6,7 @@ PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
 Done - Components and connections on CPU page: http://forum.diyefi.org/viewtopic.php?p=17767#p17767
- - Annotations of CPU sheet components from: http://forum.diyefi.org/viewtopic.php?p=17767#p17767
+Done - Annotations of CPU sheet components from: http://forum.diyefi.org/viewtopic.php?p=17767#p17767
 Done - Analogue capacitor values from: http://forum.diyefi.org/viewtopic.php?p=17706#p17706
 Done - Wakeup circuit supply voltage source from: http://forum.diyefi.org/viewtopic.php?p=17706#p17706
 Done - Ignitor output LED connection from: http://forum.diyefi.org/viewtopic.php?p=17706#p17706
