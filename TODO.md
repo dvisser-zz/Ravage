@@ -9,7 +9,7 @@ Done - Components and connections on CPU page: http://forum.diyefi.org/viewtopic
  - Annotations of CPU sheet components from: http://forum.diyefi.org/viewtopic.php?p=17767#p17767
 Done - Analogue capacitor values from: http://forum.diyefi.org/viewtopic.php?p=17706#p17706
 Done - Wakeup circuit supply voltage source from: http://forum.diyefi.org/viewtopic.php?p=17706#p17706
- - Ignitor output LED connection from: http://forum.diyefi.org/viewtopic.php?p=17706#p17706
+Done - Ignitor output LED connection from: http://forum.diyefi.org/viewtopic.php?p=17706#p17706
  - Injector drive pull down resistors from: http://forum.diyefi.org/viewtopic.php?p=17706#p17706
  - Add (5.6V) zener protection of 5V rails from: http://forum.diyefi.org/viewtopic.php?p=17706#p17706
 
@@ -39,6 +39,7 @@ Known issues which don't have a solution 100% nailed down yet.
  - Select LEDs that have high reverse voltage capability
  - Double check that opto will work with unchanged SM
  - Tune the ADC input filters
+ - PLL cap that is not sensitive to mechanical noise.
 
 And perhaps more.
 
