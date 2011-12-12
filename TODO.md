@@ -5,13 +5,14 @@ file and the changed files committed together. After a session of N changes the
 PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
- - Done* Components and connections on CPU page: http://forum.diyefi.org/viewtopic.php?p=17767#p17767
- - Done* Annotations of CPU sheet components from: http://forum.diyefi.org/viewtopic.php?p=17767#p17767
- - Done* Analogue capacitor values from: http://forum.diyefi.org/viewtopic.php?p=17706#p17706
- - Done* Wakeup circuit supply voltage source from: http://forum.diyefi.org/viewtopic.php?p=17706#p17706
- - Done* Ignitor output LED connection from: http://forum.diyefi.org/viewtopic.php?p=17706#p17706
- - Done* Injector drive pull down resistors from: http://forum.diyefi.org/viewtopic.php?p=17706#p17706
+ - Change CPU RX to CPU RXD0 and CPU RX 2 to CPU RXD1, same for TX pins
+ - Correct PDF page ordering and page number labeling per new guide added below
+ - Add a 0.33 μF to 1.0 μF ceramic capacitor in parallel with a 0.01 μF ceramic capacitor on Vs of each MAP/AAP sensor
+ - Add 15nF capacitors to the two ground monitoring analogue inputs
+ - Move the spare digital inputs from A0 and A1 to J0 and J1 which have interrupt capability
  - Add (5.6V) zener protection of 5V rails from: http://forum.diyefi.org/viewtopic.php?p=17706#p17706
+ - Add headers for spare IO, at least: SPI0 (S4-7), I2C0 (J6-7), CAN0 (M0-1) [page 15]
+ - Add headers for bonus IO, maybe: SPI1 (H0-3), SPI2 (H4-7), I2C1 (J4-5), CAN1 (M2-3), CAN2 (M4-M5), ports C and D if space
 
 All pages that are changed must be rechecked and enter another cycle of fix and
 then check or be confirmed good and then locked down.
@@ -20,6 +21,7 @@ then check or be confirmed good and then locked down.
 
 These pages have not been checked and confirmed good or had fixes suggested.
 
+ - Knock interface page
  - RS232 for LC-1 page
  - Power supply page
 
@@ -29,7 +31,6 @@ Once checked they should be moved to the TODO or to Lock Down.
 
 Known issues which don't have a solution 100% nailed down yet.
 
- - Add knock sensor interface page
  - Switch to new connector type
  - Finalise VR interface LEDs
  - Select digital input resistor values
@@ -40,8 +41,31 @@ Known issues which don't have a solution 100% nailed down yet.
  - Double check that opto will work with unchanged SM
  - Tune the ADC input filters
  - PLL cap that is not sensitive to mechanical noise
+ - Consider fitting a Molex 500901-0801 micro SD card slot attached to SPI0 and put SPI1 on the header instead
 
 And perhaps more.
+
+### PDF Sheet Ordering
+
+All sheets except for the CPU/navigation sheet will be A4 size. The CPU sheet
+needs to be larger to fit the minimum required items on it. The sheet ordering
+should be kept consistent on every commit. Preferred ordering is as follows.
+
+ 1.  CPU, decoupling, clock, PLL, config, BDM, load/run SW, CEL, other sheets
+ 2.  Power supplies
+ 3.  USB communications
+ 4.  RS232 auxiliary communications
+ 5.  RPM conditioned inputs
+ 6.  Core analogue inputs
+ 7.  Extra analogue inputs
+ 8.  Digital and wake up inputs
+ 9.  Knock sensor inputs
+ 10. Igniter output drivers
+ 11. Injector output drivers
+ 12. GP low side drivers
+ 13. 3-wire ISCV drivers
+ 14. Connector pin out
+ 15. Expansion headers
 
 ### Pre-Layout Lock Down
 
