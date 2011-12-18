@@ -42,6 +42,7 @@ Known issues which don't have a solution 100% nailed down yet.
  - Double check that opto will work with unchanged SM - Fred
  - Tune the ADC input filters - Fred + consultation
  - PLL cap that is not sensitive to mechanical noise - Maybe
+ - All pages, as the last step, check that power and ground connections are consistent and correct - Fred
 
 And perhaps more.
 
