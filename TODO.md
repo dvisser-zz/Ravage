@@ -81,3 +81,19 @@ Locked sheets will be listed here as they are finalised:
  - GP low side drivers SHA: 34ec877048cf25f6aa3182fc51247ac7178a53ac
  - 3-wire ISCV drivers SHA: 145077c2c545e9f36c01ac72a6633bf734ca3d17
 
+### Space Constraints
+
+Due to the target board size and the level of things included so far, some
+items could get cut when layout starts and we start getting a feel for
+realistic limitations. The current plan is a 2-layer board with all features
+that are currently in the schematics. I will list the possible changes below.
+
+ - Change from 2-layer to 4-layer. Benefits more compact, better noise resistance. Drawbacks, more expensive, mildly less hackable.
+ - Remove SD card slot and 3.3V power supply components
+ - Remove RS232 interface for LC-1 and other products
+ - Remove knock sensing interface circuit
+ - Drop always-on support in favour of a simpler key switched design
+ - No built in BDM header included, program via bed of nails or edge connector
+ - Less spare and GP and diagnostic drivers and protection circuits
+ - Less injector and ignition drivers, 4 minimum each, optimally 6 ignition, 8 injection
+
