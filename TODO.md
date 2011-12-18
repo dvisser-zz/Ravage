@@ -10,6 +10,7 @@ every change as there is no benefit and a binary repository size drawback.
  - Increase 47pF to 0.1uF on MAP/AAP same as everywhere else to make BOM simpler
  - Remove (5.6V) zener protection from CPU 5V rail, Fred's mistake
  - Change ground connection from RS232 jack to default not connected with two adjacent pads that can be jumpered only if desired, to avoid ground loops
+ - Fix reversed polarity on RS232 2.5mm jack for LC-1, see this for info from Preston http://forum.diyefi.org/viewtopic.php?f=58&t=1477
 
 ### SD card sheet changes
 
@@ -32,7 +33,6 @@ then check or be confirmed good and then locked down.
 Known issues which don't have a solution 100% nailed down yet.
 
  - Power supply page - requires design, discuss http://forum.diyefi.org/viewtopic.php?f=58&t=1478
- - Double check rs232 rx/tx 2.5mm jack connections - discuss http://forum.diyefi.org/viewtopic.php?f=58&t=1477
  - Tune value of the four knock input resistors - discuss http://forum.diyefi.org/viewtopic.php?p=20799#p20799
  - Consider alternate clock arrangements for knock chip as SG615P is $15 from E14 - discuss http://forum.diyefi.org/viewtopic.php?p=20799#p20799
  - Switch to new connector type - Dan
