@@ -5,35 +5,35 @@ file and the changed files committed together. After a session of N changes the
 PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
- - DONE, Move RPM magic input from A4 to K4 and add the other channel to K5
- - DONE, Fit a Molex 500901-0801 micro SD card slot attached to SPI1
- - DONE, Change CPU RX to CPU RXD0 and CPU RX 2 to CPU RXD1, same for TX pins
- - DONE, Correct PDF page ordering and page number labeling per new guide added below
- - DONE, Add a 0.33 μF to 1.0 μF ceramic capacitor in parallel with a 0.01 μF ceramic capacitor on Vs of each MAP/AAP sensor
- - DONE, Add 15nF capacitors to the two ground monitoring analogue inputs
- - DONE, Move the spare digital inputs from A0 and A1 to J0 and J1 which have interrupt capability
- - DONE, Add (5.6V) zener protection of 5V rails from: http://forum.diyefi.org/viewtopic.php?f=58&t=1328
- - DONE, Add headers for spare IO, at least: SPI2 (H4-7), I2C0 (J6-7), CAN0 (M0-1)
- - DONE, Add headers for bonus IO, maybe: I2C1 (J4-5), CAN1 (M2-3), CAN2 (M4-M5), ports C and D if space
- - DONE, Protect LEDs from high reverse voltage with another diode 
+ - Move RXEF040 polyfuse from ext MAP to power supply sheet where it is more obvious
+ - Increase 47pF to 0.1uF on MAP/AAP same as everywhere else to make BOM simpler
+ - Remove (5.6V) zener protection from CPU 5V rail, Fred's mistake
+ - Change ground connection from RS232 jack to default not connected with two adjacent pads that can be jumpered only if desired, to avoid ground loops
+
+### SD card sheet changes
+
+Discuss all SD card sheet changes before doing anything, skype, IRC and forum: http://forum.diyefi.org/viewtopic.php?f=58&t=1479
+
+ - Add cross to NC pins on SD card sheet
+ - Improve layout of SD card sheet - Preston wants to do this
+ - Move 3.3V regulator to 12V input such that sharp current changes don't affect our analogue stuff
+ - Use regulator with enable input and parallel with analogue enable on 5V setup
+ - Reduce post reg capacitor to 47uF tantalum
+ - Add 200uF capacitor(s) to input of 3.3V reg
+ - Change 1.0uF to 0.1uF ceramics on both sides of 3.3V reg
+ - Move all 3.3V power supply caps to power supply sheet
 
 All pages that are changed must be rechecked and enter another cycle of fix and
 then check or be confirmed good and then locked down.
-
-### Still To Review
-
-These pages have not been checked and confirmed good or had fixes suggested.
-
- - Knock interface page
- - RS232 for LC-1 page
- - Power supply page
-
-Once checked they should be moved to the TODO or to Lock Down.
 
 ### Still To Add/Do
 
 Known issues which don't have a solution 100% nailed down yet.
 
+ - Power supply page - requires design, discuss http://forum.diyefi.org/viewtopic.php?f=58&t=1478
+ - Double check rs232 rx/tx 2.5mm jack connections - discuss http://forum.diyefi.org/viewtopic.php?f=58&t=1477
+ - Tune value of the four knock input resistors - discuss http://forum.diyefi.org/viewtopic.php?p=20799#p20799
+ - Consider alternate clock arrangements for knock chip as SG615P is $15 from E14 - discuss http://forum.diyefi.org/viewtopic.php?p=20799#p20799
  - Switch to new connector type - Dan
  - Finalise VR interface LEDs - Dan
  - Select digital input resistor values - Can't, needs diode part selection
@@ -75,5 +75,8 @@ it will get locked. That is to say, no further changes to that sheet's source
 
 Locked sheets will be listed here as they are finalised:
 
- - CPU page, except net names/other sheet connections, and maybe PLL cap type
+ - CPU page, except maybe PLL cap type. Currently SHA: eb0c5fea124c192bc0a57c32184a5ed147aea6cf
+ - Injector output drivers SHA: 579debcee21d78963c464d22f276e9007f06890d
+ - GP low side drivers SHA: 34ec877048cf25f6aa3182fc51247ac7178a53ac
+ - 3-wire ISCV drivers SHA: 145077c2c545e9f36c01ac72a6633bf734ca3d17
 
