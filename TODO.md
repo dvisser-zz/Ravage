@@ -5,6 +5,7 @@ file and the changed files committed together. After a session of N changes the
 PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
+ - Increase value of ignition drive series limit resistors to 200ohm to keep power dissipation reasonable in extreme use cases
  - Fix RX/TX pin labels in green page box on bus on CPU page
  - Move RXEF040 polyfuse from ext MAP to power supply sheet where it is more obvious
  - Increase 47pF to 0.1uF on MAP/AAP same as everywhere else to make BOM simpler
