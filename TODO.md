@@ -5,6 +5,7 @@ file and the changed files committed together. After a session of N changes the
 PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
+ - Change wording "optional: fit these if using PORTB to drive injectors and remove the 100K and 1K resistors from PORTT." to "Note: Fit these if using PORTB to drive injectors and remove the 1K resistor from PORTT."
  - Swap SD card slot to this molex part: http://au.element14.com/molex/502570-0893/memory-card-connector-microsd-8way/dp/2060731?Ntt=2060731
  - Swap clock chip on knock page to identical crystal part number to main MCU, but with correct configuration for different operating mode on knock chip http://forum.diyefi.org/viewtopic.php?p=20799#p20799
  - Set values of the four knock input resistors to those discussed http://forum.diyefi.org/viewtopic.php?p=20799#p20799
