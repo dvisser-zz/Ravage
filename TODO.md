@@ -5,6 +5,8 @@ file and the changed files committed together. After a session of N changes the
 PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
+ - Swap clock chip on knock page to identical crystal part number to main MCU, but with correct configuration for different operating mode on knock chip http://forum.diyefi.org/viewtopic.php?p=20799#p20799
+ - Set values of the four knock input resistors to those discussed http://forum.diyefi.org/viewtopic.php?p=20799#p20799
  - Remove absolute paths from all sheets
  - Add cost effective soic8 RTC I2C chip to lower left of cpu sheet
  - Add 2 x cpu ground, 2 x switched 5v, 1 x always on 5v, 1 x raw 12v to the spare port headers
@@ -37,8 +39,6 @@ then check or be confirmed good and then locked down.
 Known issues which don't have a solution 100% nailed down yet.
 
  - Power supply page - requires design, discuss http://forum.diyefi.org/viewtopic.php?f=58&t=1478
- - Tune value of the four knock input resistors - discuss http://forum.diyefi.org/viewtopic.php?p=20799#p20799
- - Consider alternate clock arrangements for knock chip as SG615P is $15 from E14 - discuss http://forum.diyefi.org/viewtopic.php?p=20799#p20799
  - Switch to new connector type - Dan
  - Finalise VR interface LEDs - Dan
  - Select digital input resistor values - Can't, needs diode part selection
