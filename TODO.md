@@ -5,6 +5,9 @@ file and the changed files committed together. After a session of N changes the
 PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
+ - Remove absolute paths from all sheets
+ - Add cost effective soic8 RTC I2C chip to lower left of cpu sheet
+ - Add 2 x cpu ground, 2 x switched 5v, 1 x always on 5v, 1 x raw 12v to the spare port headers
  - Increase value of ignition drive series limit resistors to 200ohm to keep power dissipation reasonable in extreme use cases
  - Fix RX/TX pin labels in green page box on bus on CPU page
  - Move RXEF040 polyfuse from ext MAP to power supply sheet where it is more obvious
