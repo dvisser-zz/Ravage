@@ -86,7 +86,6 @@ it will get locked. That is to say, no further changes to that sheet's source
 
 Locked sheets will be listed here as they are finalised:
 
- - CPU page, except maybe PLL cap type. Currently SHA: eb0c5fea124c192bc0a57c32184a5ed147aea6cf
  - Injector output drivers SHA: 579debcee21d78963c464d22f276e9007f06890d
  - GP low side drivers SHA: 34ec877048cf25f6aa3182fc51247ac7178a53ac
  - 3-wire ISCV drivers SHA: 145077c2c545e9f36c01ac72a6633bf734ca3d17
