@@ -1,4 +1,4 @@
-﻿### TODO
+### TODO
 
 Items listed here should be changed one at a time, and the line marked done, this
 file and the changed files committed together. After a session of N changes the
