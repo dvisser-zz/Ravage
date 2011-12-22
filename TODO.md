@@ -1,4 +1,4 @@
-### TODO
+﻿### TODO
 
 Items listed here should be changed one at a time, and the line marked done, this
 file and the changed files committed together. After a session of N changes the
@@ -12,7 +12,7 @@ every change as there is no benefit and a binary repository size drawback.
  - Swap SD card slot to this push-pull part: http://au.element14.com/jsp/displayProduct.jsp?sku=1764377&action=view&CMP=GRHS-1000466
  - Swap clock chip on knock page to identical crystal part number to main MCU, but with 1M resistor in parallel http://forum.diyefi.org/viewtopic.php?p=20799#p20799
  - Set values of the four knock input resistors to those discussed http://forum.diyefi.org/viewtopic.php?p=20799#p20799
- - Remove absolute file paths from all sheets, in one commit
+ - DONE Remove absolute file paths from all sheets, in one commit
  - Add cost effective soic8 RTC I2C chip to lower left of cpu sheet
  - Add 2 x cpu ground, 2 x switched 5v, 1 x always on 5v, 1 x raw 12v to the spare port headers
  - Increase value of ignition drive series limit resistors to 200ohm to keep power dissipation reasonable in extreme use cases
@@ -105,4 +105,3 @@ that are currently in the schematics. I will list the possible changes below.
  - No built in BDM header included, program via bed of nails or edge connector
  - Less spare and GP and diagnostic drivers and protection circuits
  - Less injector and ignition drivers, 4 minimum each, optimally 6 ignition, 8 injection
-
