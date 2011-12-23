@@ -13,7 +13,7 @@ every change as there is no benefit and a binary repository size drawback.
  - DONE Swap clock chip on knock page to identical crystal part number to main MCU, but with 1M resistor in parallel http://forum.diyefi.org/viewtopic.php?p=20799#p20799
  - DONE Set values of the four knock input resistors to those discussed http://forum.diyefi.org/viewtopic.php?p=20799#p20799
  - DONE Remove absolute file paths from all sheets, in one commit
- - Add cost effective soic8 RTC I2C chip to lower left of cpu sheet
+ - DONE Add cost effective soic8 RTC I2C chip to lower left of cpu sheet
  - Add 2 x cpu ground, 2 x switched 5v, 1 x always on 5v, 1 x raw 12v to the spare port headers
  - Increase value of ignition drive series limit resistors to 200ohm to keep power dissipation reasonable in extreme use cases
  - Fix RX/TX pin labels in green page box on bus on CPU page
