@@ -10,7 +10,7 @@ every change as there is no benefit and a binary repository size drawback.
  - DONE in same commit as above line, Change the short versions "INJ1" to Injector 1" and "IGN1" to "Ignitor 1" between the connector sheet and the driver sheets
  - DONE Change wording "optional: fit these if using PORTB to drive injectors and remove the 100K and 1K resistors from PORTT." to "Note: Fit these if using PORTB to drive injectors and remove the 1K resistor from PORTT."
  - DONE Swap SD card slot to this push-pull part: http://au.element14.com/jsp/displayProduct.jsp?sku=1764377&action=view&CMP=GRHS-1000466
- - Swap clock chip on knock page to identical crystal part number to main MCU, but with 1M resistor in parallel http://forum.diyefi.org/viewtopic.php?p=20799#p20799
+ - DONE Swap clock chip on knock page to identical crystal part number to main MCU, but with 1M resistor in parallel http://forum.diyefi.org/viewtopic.php?p=20799#p20799
  - Set values of the four knock input resistors to those discussed http://forum.diyefi.org/viewtopic.php?p=20799#p20799
  - DONE Remove absolute file paths from all sheets, in one commit
  - Add cost effective soic8 RTC I2C chip to lower left of cpu sheet
