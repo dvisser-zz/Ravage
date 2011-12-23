@@ -17,7 +17,7 @@ every change as there is no benefit and a binary repository size drawback.
  - DONE Add 2 x cpu ground, 2 x switched 5v, 1 x always on 5v, 1 x raw 12v to the spare port headers
  - DONE Increase value of ignition drive series limit resistors to 200ohm to keep power dissipation reasonable in extreme use cases
  - DONE Fix RX/TX pin labels in green page box on bus on CPU page
- - Move RXEF040 polyfuse from ext MAP to power supply sheet where it is more obvious
+ - DONE Move RXEF040 polyfuse from ext MAP to power supply sheet where it is more obvious
  - Increase 47pF to 0.1uF on MAP/AAP same as everywhere else to make BOM simpler
  - Remove (5.6V) zener protection from CPU 5V rail, Fred's mistake
  - Change ground connection from RS232 jack to default not connected with two adjacent pads that can be jumpered only if desired, to avoid ground loops
