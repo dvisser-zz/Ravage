@@ -19,7 +19,7 @@ every change as there is no benefit and a binary repository size drawback.
  - DONE Fix RX/TX pin labels in green page box on bus on CPU page
  - DONE Move RXEF040 polyfuse from ext MAP to power supply sheet where it is more obvious
  - DONE Increase 47pF to 0.1uF on MAP/AAP same as everywhere else to make BOM simpler
- - Remove (5.6V) zener protection from CPU 5V rail, Fred's mistake
+ - DONE Remove (5.6V) zener protection from CPU 5V rail, Fred's mistake
  - Change ground connection from RS232 jack to default not connected with two adjacent pads that can be jumpered only if desired, to avoid ground loops
  - Fix reversed polarity on RS232 2.5mm jack for LC-1, see this for info from Preston http://forum.diyefi.org/viewtopic.php?f=58&t=1477
 
