@@ -5,9 +5,9 @@ file and the changed files committed together. After a session of N changes the
 PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
- - Change "ISCV INV OUT" to "ISCV INV." same for non-inverted.
- - Change all instances of injecter and igniter to ignitor and injector (e >> o) and remove the # from in front of each number
- - Change the short versions "INJ1" to Injector 1" and "IGN1" to "Ignitor 1" between the connector sheet and the driver sheets
+ - DONE Change "ISCV INV OUT" to "ISCV INV." same for non-inverted.
+ - DONE Change all instances of injecter and igniter to ignitor and injector (e >> o) and remove the # from in front of each number
+ - DONE in same commit as above line, Change the short versions "INJ1" to Injector 1" and "IGN1" to "Ignitor 1" between the connector sheet and the driver sheets
  - Change wording "optional: fit these if using PORTB to drive injectors and remove the 100K and 1K resistors from PORTT." to "Note: Fit these if using PORTB to drive injectors and remove the 1K resistor from PORTT."
  - Swap SD card slot to this push-pull part: http://au.element14.com/jsp/displayProduct.jsp?sku=1764377&action=view&CMP=GRHS-1000466
  - Swap clock chip on knock page to identical crystal part number to main MCU, but with 1M resistor in parallel http://forum.diyefi.org/viewtopic.php?p=20799#p20799
