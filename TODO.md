@@ -11,7 +11,7 @@ every change as there is no benefit and a binary repository size drawback.
  - DONE Change wording "optional: fit these if using PORTB to drive injectors and remove the 100K and 1K resistors from PORTT." to "Note: Fit these if using PORTB to drive injectors and remove the 1K resistor from PORTT."
  - DONE Swap SD card slot to this push-pull part: http://au.element14.com/jsp/displayProduct.jsp?sku=1764377&action=view&CMP=GRHS-1000466
  - DONE Swap clock chip on knock page to identical crystal part number to main MCU, but with 1M resistor in parallel http://forum.diyefi.org/viewtopic.php?p=20799#p20799
- - Set values of the four knock input resistors to those discussed http://forum.diyefi.org/viewtopic.php?p=20799#p20799
+ - DONE Set values of the four knock input resistors to those discussed http://forum.diyefi.org/viewtopic.php?p=20799#p20799
  - DONE Remove absolute file paths from all sheets, in one commit
  - Add cost effective soic8 RTC I2C chip to lower left of cpu sheet
  - Add 2 x cpu ground, 2 x switched 5v, 1 x always on 5v, 1 x raw 12v to the spare port headers
