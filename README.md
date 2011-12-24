@@ -2,12 +2,10 @@
 
 ### Introduction
 
-The name "RavAGE" is something relating to the Toyota 4-'AGE' engine. The aim of the RavAGE project
-is to create a hardware solution for FreeEMS that caters to the needs of the Toyota
-4AGE engines (16V and 20V). It may also be used on most 4/6cyl engine setups with minimal
-to no modifications required. 
-
-Ideally, at the end of the day, I am hoping that future developments in software allow for full sequential injection AND ignition. 
+The name "RavAGE" is something relating to the Toyota 4-'AGE' engine. The aim of
+the RavAGE project is to create a hardware solution for FreeEMS that caters to
+the needs of the Toyota 4AGE engines (16V and 20V). It may also be used on most
+4/6cyl engine setups with minimal to no modifications required. 
 
 Please see [FreeEMS.org](http://freeems.org) for the most up to date information
 and links for this project and all of the other aspects of the FreeEMS project.
@@ -30,7 +28,18 @@ Core IO specs:
  - 2 spare analogue inputs (option to configure as temperature or voltage input).
  - 2 spare low side drives.
 
-PCB Size is to be as small as possible, but attention must be paid to what connector is chosen as this will more than likely be the deciding factor on the overall size. Worst-case scenario will be a PCB that is 100mm x 80mm, which is still small and allows for the use of some sort of "nice" connector. It could be made smaller, but if I make it 100mm x 80mm then I will have room for extra spare drives, etc. 
+PCB Size is to be as small as possible, but attention must be paid when choosing
+a connector as this will more than likely be the deciding factor on the overall
+size. Worst-case scenario will be a PCB that is 100mm x 80mm, which is still
+small and allows for the use of some sort of "nice" connector. It could be
+made smaller, but at this size, there will be room for extra general purpose
+output drivers, analogue inputs, etc.
+
+### Status
+
+For the most up to date status information for the project, refer to the TODO.md
+file which is maintained in sync with the schematics by a small team who verify
+each other's work.
 
 ### Changes
 
