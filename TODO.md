@@ -5,7 +5,7 @@ file and the changed files committed together. After a session of N changes the
 PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
- - Change TPS power to exit on right into other bus line, cosmetic on CPU sheet
+ - Nothing right now!
 
 ### SD card sheet changes
 
