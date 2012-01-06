@@ -5,7 +5,7 @@ file and the changed files committed together. After a session of N changes the
 PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
- - Nothing right now!
+ - Move all 100nF to 0.1uF such that it's consistent. Less than 0.1uF should be nF, less than 0.1nF should be pF.
 
 ### SD card sheet changes
 
@@ -26,6 +26,8 @@ then check or be confirmed good and then locked down.
 
 Known issues which don't have a solution 100% nailed down yet.
 
+ - Add second independently fused 5V out to connector pin out if enough pins
+ - MAX99XX decoupling cap arrangement design required
  - Power supply page - requires design, discuss http://forum.diyefi.org/viewtopic.php?f=58&t=1478
  - Switch to new connector type - Dan
  - Finalise VR interface LEDs - Dan
