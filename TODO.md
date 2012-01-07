@@ -6,6 +6,12 @@ PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
  - Move all 100nF to 0.1uF such that it's consistent. Less than 0.1uF should be nF, less than 0.1nF should be pF.
+ - Change 4.7k resistors on inputs to optos on USB sheet to 2.4k for better drive with variable voltage.
+ - Fix all direction designators in CPU and other sheets in one commit:
+   - Reverse all direction designators in both analogue sheets
+   - Reverse all direction designators in digital inputs sheet
+   - Reverse all direction designators except PK4 and PK5 in VR interfaces sheet
+   - Reverse all inputs on connector sheet, 4 spare inputs, IAT, CHT, TPS, EGO, MAT, EXT MAP, 6 RPM inputs, 2 knock inputs
 
 ### SD card sheet changes
 
