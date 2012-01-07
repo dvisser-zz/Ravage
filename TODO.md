@@ -63,7 +63,7 @@ Locked sheets will be listed here as they are finalised:
  6.  Core analogue inputs @ NO pending value selection
  7.  Extra analogue inputs @ NO pending value selection
  8.  Digital and wake up inputs @ NO pending testing and part selection
- 9.  Knock sensor inputs @ NO 55f59ffe663e9ac85e15489c5aa0e3c054d4e89e
+ 9.  Knock sensor inputs @ 55f59ffe663e9ac85e15489c5aa0e3c054d4e89e
  10. Igniter output drivers @ NO pending testing
  11. Injector output drivers @ 0526a1bb8adf934c94060e8f6c12ad40b406c916
  12. GP low side drivers @ 442e732dc18f5674576314bf57ca98bb4ed757f9
