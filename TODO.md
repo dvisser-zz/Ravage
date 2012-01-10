@@ -5,15 +5,15 @@ file and the changed files committed together. After a session of N changes the
 PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
- - Change MCU part number to 125C version
- - Swap PLL MCU pins to be correct
- - Move all 100nF to 0.1uF such that it's consistent. Less than 0.1uF should be nF, less than 0.1nF should be pF.
- - Change 4.7k resistors on inputs to optos on USB sheet to 2.4k for better drive with variable voltage.
- - Fix all direction designators in CPU and other sheets in one commit:
-   - Reverse all direction designators in both analogue sheets
-   - Reverse all direction designators in digital inputs sheet
-   - Reverse all direction designators except PK4 and PK5 in VR interfaces sheet
-   - Reverse all inputs on connector sheet, 4 spare inputs, IAT, CHT, TPS, EGO, MAT, EXT MAP, 6 RPM inputs, 2 knock inputs
+ - DONE, Change MCU part number to 125C version
+ - DONE, Swap PLL MCU pins to be correct
+ - DONE, Move all 100nF to 0.1uF such that it's consistent. Less than 0.1uF should be nF, less than 0.1nF should be pF.
+ - DONE, Change 4.7k resistors on inputs to optos on USB sheet to 2.4k for better drive with variable voltage.
+ - DONE, Fix all direction designators in CPU and other sheets in one commit:
+   - DONE, Reverse all direction designators in both analogue sheets
+   - DONE, Reverse all direction designators in digital inputs sheet
+   - DONE, Reverse all direction designators except PK4 and PK5 in VR interfaces sheet
+   - DONE, Reverse all inputs on connector sheet, 4 spare inputs, IAT, CHT, TPS, EGO, MAT, EXT MAP, 6 RPM inputs, 2 knock inputs
 
 ### SD card sheet changes
 
