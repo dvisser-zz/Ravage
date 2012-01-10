@@ -5,6 +5,7 @@ file and the changed files committed together. After a session of N changes the
 PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
+ - Change MCU part number to 125C version
  - Swap PLL MCU pins to be correct
  - Move all 100nF to 0.1uF such that it's consistent. Less than 0.1uF should be nF, less than 0.1nF should be pF.
  - Change 4.7k resistors on inputs to optos on USB sheet to 2.4k for better drive with variable voltage.
