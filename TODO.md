@@ -5,6 +5,11 @@ file and the changed files committed together. After a session of N changes the
 PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
+ - Add no connection symbol to unconnected pin of RTC
+ - Correct off-sheet connector directions
+ - Remove unnecessary crossing wires
+ - Re-layout MCU sheet to maintain bus flow
+ - Matched USB sheet to remainder of project with left to right sch flow
  - DONE, Change MCU part number to 125C version
  - DONE, Swap PLL MCU pins to be correct
  - DONE, Move all 100nF to 0.1uF such that it's consistent. Less than 0.1uF should be nF, less than 0.1nF should be pF.
