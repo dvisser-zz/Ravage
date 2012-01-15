@@ -7,7 +7,7 @@ every change as there is no benefit and a binary repository size drawback.
 
  - Change all values using capital K for kilo to lower case k for kilo
  - DONE, Add no connection symbol to unconnected pin of RTC
- - Reverse direction designators of PK4 and PK5 in VR interfaces sheet, regression in recent work
+ - DONE, Reverse direction designators of PK4 and PK5 in VR interfaces sheet, regression in recent work
 
 ### SD card sheet changes
 
