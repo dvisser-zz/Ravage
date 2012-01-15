@@ -5,6 +5,7 @@ file and the changed files committed together. After a session of N changes the
 PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
+ - Change all values using capital K for kilo to lower case k for kilo
  - Add no connection symbol to unconnected pin of RTC
  - Reverse direction designators of PK4 and PK5 in VR interfaces sheet, regression in recent work
 
