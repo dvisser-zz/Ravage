@@ -5,9 +5,9 @@ file and the changed files committed together. After a session of N changes the
 PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
- - DONE, Change all values using capital K for kilo to lower case k for kilo
- - DONE, Add no connection symbol to unconnected pin of RTC
- - DONE, Reverse direction designators of PK4 and PK5 in VR interfaces sheet, regression in recent work
+ - Remove battery from RTC and replace with pads for DIY adding a battery
+ - Add a second resistor feed to the inverted ISCV output FET from pin P?? which can be installed instead of inversion stuff for non toyota/bmw setups.
+ - Change 22pF crystal load caps to 18pF to suit part number selected and adjust note to reflect reality of tolerance type (NPO/C0G)
 
 ### SD card sheet changes
 
@@ -28,10 +28,8 @@ then check or be confirmed good and then locked down.
 
 Known issues which don't have a solution 100% nailed down yet.
 
- - DONE, Add second independently fused 5V out to connector pin out if enough pins
  - MAX99XX decoupling cap arrangement design required
  - Power supply page - requires design, discuss http://forum.diyefi.org/viewtopic.php?f=58&t=1478
- - DONE, Switch to new connector type - Dan
  - Finalise VR interface LEDs - Dan
  - Select digital input resistor values - Can't, needs diode part selection
  - Finalise selection of wakeup pin - Fred
@@ -54,18 +52,18 @@ Locked sheets will be listed here as they are finalised:
  1.  CPU and buses, etc @ NO pending cosmetic changes and movements
  2.  Power supplies @ NO pending discussion and design
  3.  USB communications @ NO pending testing
- 4.  RS232 communications @ 5e51d8a0c3d99bf64ca3599f3e954b67b4b253e9
+ 4.  RS232 communications @ 499fc0af7bf7de4701e36266eb26f4519f6fdbed
  5.  RPM conditioned inputs @ NO pending testing
  6.  Core analogue inputs @ NO pending value selection
  7.  Extra analogue inputs @ NO pending value selection
  8.  Digital and wake up inputs @ NO pending testing and part selection
- 9.  Knock sensor inputs @ 55f59ffe663e9ac85e15489c5aa0e3c054d4e89e
+ 9.  Knock sensor inputs @ 4c290ffce1c0d5e6a108e121f6de7f48d35dc9bd
  10. Igniter output drivers @ NO pending testing
- 11. Injector output drivers @ 0526a1bb8adf934c94060e8f6c12ad40b406c916
- 12. GP low side drivers @ 442e732dc18f5674576314bf57ca98bb4ed757f9
- 13. 3-wire ISCV drivers @ 15cc869f0e39f8fb0abcd6d57b411e65066c510a
+ 11. Injector output drivers @ 4c290ffce1c0d5e6a108e121f6de7f48d35dc9bd
+ 12. GP low side drivers @ 4c290ffce1c0d5e6a108e121f6de7f48d35dc9bd
+ 13. 3-wire ISCV drivers @ 4c290ffce1c0d5e6a108e121f6de7f48d35dc9bd
  14. SD card slot @ NO pending multiple changes
- 15. Connector pin out @ NO pending connector change
+ 15. Connector pin out @ NO pending pin assignment
 
 ### PDF Sheet Ordering
 
