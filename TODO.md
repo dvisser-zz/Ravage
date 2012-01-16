@@ -28,7 +28,7 @@ then check or be confirmed good and then locked down.
 
 Known issues which don't have a solution 100% nailed down yet.
 
- - Add second independently fused 5V out to connector pin out if enough pins
+ - DONE, Add second independently fused 5V out to connector pin out if enough pins
  - MAX99XX decoupling cap arrangement design required
  - Power supply page - requires design, discuss http://forum.diyefi.org/viewtopic.php?f=58&t=1478
  - DONE, Switch to new connector type - Dan
