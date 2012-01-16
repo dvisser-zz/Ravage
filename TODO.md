@@ -5,7 +5,7 @@ file and the changed files committed together. After a session of N changes the
 PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
- - Remove battery from RTC and replace with pads for DIY adding a battery
+ - DONE, Remove battery from RTC and replace with pads for DIY adding a battery
  - Add a second resistor feed to the inverted ISCV output FET from pin P?? which can be installed instead of inversion stuff for non toyota/bmw setups.
  - Change 22pF crystal load caps to 18pF to suit part number selected and adjust note to reflect reality of tolerance type (NPO/C0G)
 
