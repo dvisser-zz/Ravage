@@ -31,7 +31,7 @@ Known issues which don't have a solution 100% nailed down yet.
  - Add second independently fused 5V out to connector pin out if enough pins
  - MAX99XX decoupling cap arrangement design required
  - Power supply page - requires design, discuss http://forum.diyefi.org/viewtopic.php?f=58&t=1478
- - Switch to new connector type - Dan
+ - DONE, Switch to new connector type - Dan
  - Finalise VR interface LEDs - Dan
  - Select digital input resistor values - Can't, needs diode part selection
  - Finalise selection of wakeup pin - Fred
