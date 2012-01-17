@@ -5,9 +5,21 @@ file and the changed files committed together. After a session of N changes the
 PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
- - DONE, Remove battery from RTC and replace with pads for DIY adding a battery
- - DONE, Add a second resistor feed to the inverted ISCV output FET from pin P?? which can be installed instead of inversion stuff for non toyota/bmw setups.
- - DONE, Change 22pF crystal load caps to 18pF to suit part number selected and adjust note to reflect reality of tolerance type (NPO/C0G)
+ - Remove CPU pins that aren't connected from the bus and add NC X symbol to them for easy identification of unused pins, commit PDF after this change before others.
+ - Move Spare IO headers to single header on sheet immediately before connector sheet (15), commit PDF after this change before others.
+ - Move ADC ground to just come from CPU/Refernce ground, not be it's own and have 2 small pins called "Sensor Ground" near all of the inputs, commit PDF after this change before others.
+ - Reorder the connector pin out from most sensitive to most noisy by way of these changes:
+   - 5v tps physically adjacent to tps in
+   - 5v aux physically adjacent to ext map in
+   - Ignitor drives adjacent to inputs
+   - Fuel pump relay drive adjacent to ignitor drives
+   - Spare DINs next to spare ADCs
+   - Rename 12V switched to 12V BRV/Wakeup and move to a small pin with the other inputs
+ - Change the connector pin out in the following way as discussed on forum:
+   - Add extra big pin to injector ground scheme, one on 1,3,5, the other on 2,4,6
+   - Add extra big pin to ACC ground scheme, spread the pins across them similar to injector ground
+   - Move one knock input to a dedicated connector and the other two pads/header for DIY addition
+ - All connector changes above in a single commit except the ADC ground rework which should be in one commit WITH PDF update before the other items are done so that it can be separately checked, total 4 PDF commits and four schematic sheet commits, interlaced.
 
 ### SD card sheet changes
 
@@ -61,9 +73,10 @@ Locked sheets will be listed here as they are finalised:
  10. Igniter output drivers @ NO pending testing
  11. Injector output drivers @ 4c290ffce1c0d5e6a108e121f6de7f48d35dc9bd
  12. GP low side drivers @ 4c290ffce1c0d5e6a108e121f6de7f48d35dc9bd
- 13. 3-wire ISCV drivers @ 4c290ffce1c0d5e6a108e121f6de7f48d35dc9bd
+ 13. 3-wire ISCV drivers @ 7f8c11123221a048d2e89803336e2ae40265c135
  14. SD card slot @ NO pending multiple changes
- 15. Connector pin out @ NO pending pin assignment
+ 15. Spare IO Header @ NO pending initial design
+ 16. Connector pin out @ NO pending pin assignment
 
 ### PDF Sheet Ordering
 
@@ -85,7 +98,8 @@ should be kept consistent on every commit. Preferred ordering is as follows.
  12. GP low side drivers
  13. 3-wire ISCV drivers
  14. SD card slot
- 15. Connector pin out
+ 15. Spare IO Header
+ 16. Connector pin out
 
 ### Space Constraints
 
