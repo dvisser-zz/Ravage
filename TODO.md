@@ -5,7 +5,7 @@ file and the changed files committed together. After a session of N changes the
 PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
- - Remove CPU pins that aren't connected from the bus and add NC X symbol to them for easy identification of unused pins, commit PDF after this change before others.
+ - DONE, Remove CPU pins that aren't connected from the bus and add NC X symbol to them for easy identification of unused pins, commit PDF after this change before others.
  - Move Spare IO headers to single header on sheet immediately before connector sheet (15), commit PDF after this change before others.
  - Move ADC ground to just come from CPU/Refernce ground, not be it's own and have 2 small pins called "Sensor Ground" near all of the inputs, commit PDF after this change before others.
  - Reorder the connector pin out from most sensitive to most noisy by way of these changes:
