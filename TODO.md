@@ -20,7 +20,7 @@ every change as there is no benefit and a binary repository size drawback.
    - Add extra big pin to ACC ground scheme, spread the pins across them similar to injector ground
    - Move one knock input to a dedicated connector and the other two pads/header for DIY addition
  - All connector changes above in a single commit except the ADC ground rework which should be in one commit WITH PDF update before the other items are done so that it can be separately checked, total 4 PDF commits and four schematic sheet commits, interlaced.
-   - Update all VNB10N07 MOSFET's to VND14NV04-E MOSFET's due to space limitations and the fact that they are newer components.
+   - DONE, Update all VNB10N07 MOSFET's to VND14NV04-E MOSFET's due to space limitations and the fact that they are newer components.
    - Add more decoupling to MAX9926 IC's as per datasheet recommendations.
 
 ### SD card sheet changes
