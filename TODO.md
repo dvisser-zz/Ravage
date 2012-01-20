@@ -5,9 +5,14 @@ file and the changed files committed together. After a session of N changes the
 PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
- - DONE, Remove CPU pins that aren't connected from the bus and add NC X symbol to them for easy identification of unused pins, commit PDF after this change before others.
- - DONE, Move Spare IO headers to single header on sheet immediately before connector sheet (15), commit PDF after this change before others.
- - DONE, Move ADC ground to just come from CPU/Refernce ground, not be it's own and have 2 small pins called "Sensor Ground" near all of the inputs, commit PDF after this change before others.
+ - Change the angle of the entries into the connector sheet on the CPU page to be sloping down into it and respect the flow. Noticed you fixed the ones below it in header sheet change.
+ - Reverse direction of background and reset pin flow designators
+ - Find a pretty solution to the load/run direction designator being bi-directional problem, do this post discussion on forum.
+ - Reverse PJ6/PJ7 on RTC chip, currently incorrect. Thanks Huff!!! :-)
+ - Add PP0 and PP4 and AN17-AN20 to spare locations on expansion header. How did we forget spare ADCs? :-o Obvious with the red crosses ;-)
+ - Remove trailing E in RTC part number, this stands for the packaging type, ie, tape and reel vs tube, and shouldn't be listed here as both E and F are identical silicone.
+ - Remove trailing E from FET part numbers, same reason as above.
+ - Add to and correct the NOTES.md file and mention both the NOTES.md and ERRATA.md files in the CPU sheet such that it's in the first page of the PDF. Optionally remove some text from the schematic pending discussion on the forum.
  - Reorder the connector pin out from most sensitive to most noisy by way of these changes:
    - 5v tps physically adjacent to tps in
    - 5v aux physically adjacent to ext map in
@@ -19,9 +24,6 @@ every change as there is no benefit and a binary repository size drawback.
    - Add extra big pin to injector ground scheme, one on 1,3,5, the other on 2,4,6
    - Add extra big pin to ACC ground scheme, spread the pins across them similar to injector ground
    - Move one knock input to a dedicated connector and the other two pads/header for DIY addition
- - All connector changes above in a single commit except the ADC ground rework which should be in one commit WITH PDF update before the other items are done so that it can be separately checked, total 4 PDF commits and four schematic sheet commits, interlaced.
- - DONE, Update all VNB10N07 MOSFET's to VND14NV04-E MOSFET's due to space limitations and the fact that they are newer components.
- - DONE, Add more decoupling to MAX9926 IC's as per datasheet recommendations.
 
 ### SD card sheet changes
 
@@ -42,7 +44,7 @@ then check or be confirmed good and then locked down.
 
 Known issues which don't have a solution 100% nailed down yet.
 
- - MAX99XX decoupling cap arrangement design required
+ - Consider adding 10uF caps to key power supply pins on the CPU
  - Power supply page - requires design, discuss http://forum.diyefi.org/viewtopic.php?f=58&t=1478
  - Finalise VR interface LEDs - Dan
  - Select digital input resistor values - Can't, needs diode part selection
@@ -66,19 +68,19 @@ Locked sheets will be listed here as they are finalised:
  1.  CPU and buses, etc @ NO pending cosmetic changes and movements
  2.  Power supplies @ NO pending discussion and design
  3.  USB communications @ NO pending testing
- 4.  RS232 communications @ 499fc0af7bf7de4701e36266eb26f4519f6fdbed
+ 4.  RS232 communications @ 247e1f109145382aaa98ed5c90c7676b9f4068cd
  5.  RPM conditioned inputs @ NO pending testing
  6.  Core analogue inputs @ NO pending value selection
  7.  Extra analogue inputs @ NO pending value selection
  8.  Digital and wake up inputs @ NO pending testing and part selection
- 9.  Knock sensor inputs @ 4c290ffce1c0d5e6a108e121f6de7f48d35dc9bd
+ 9.  Knock sensor inputs @ 247e1f109145382aaa98ed5c90c7676b9f4068cd
  10. Igniter output drivers @ NO pending testing
- 11. Injector output drivers @ 4c290ffce1c0d5e6a108e121f6de7f48d35dc9bd
- 12. GP low side drivers @ 4c290ffce1c0d5e6a108e121f6de7f48d35dc9bd
- 13. 3-wire ISCV drivers @ 7f8c11123221a048d2e89803336e2ae40265c135
+ 11. Injector output drivers @ b30189a38727387feac949b6a7d1e8129a5f24b3
+ 12. GP low side drivers @ b30189a38727387feac949b6a7d1e8129a5f24b3
+ 13. 3-wire ISCV drivers @ b30189a38727387feac949b6a7d1e8129a5f24b3
  14. SD card slot @ NO pending multiple changes
- 15. Spare IO Header @ NO pending initial design
- 16. Connector pin out @ NO pending pin assignment
+ 15. Spare IO Header @ NO pending additional pin connections
+ 16. Connector pin out @ NO pending pin rearrangement
 
 ### PDF Sheet Ordering
 
