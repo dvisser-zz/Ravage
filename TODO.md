@@ -5,6 +5,7 @@ file and the changed files committed together. After a session of N changes the
 PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
+ - Fix "Cell LED" to be "CEL LED".
  - Change the angle of the entries into the connector sheet on the CPU page to be sloping down into it and respect the flow. Noticed you fixed the ones below it in header sheet change.
  - Reverse direction of background and reset pin flow designators
  - Find a pretty solution to the load/run direction designator being bi-directional problem, do this post discussion on forum.
