@@ -26,6 +26,7 @@ every change as there is no benefit and a binary repository size drawback.
    - Add extra big pin to injector ground scheme, one on 1,3,5, the other on 2,4,6
    - Add extra big pin to ACC ground scheme, spread the pins across them similar to injector ground
    - Move one knock input to a dedicated connector and the other two pads/header for DIY addition
+ - Change SD card level shift IC schematic symbol to same as that used for other IC's in the schematic. 
 
 ### SD card sheet changes
 
