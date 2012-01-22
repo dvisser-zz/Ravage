@@ -16,8 +16,8 @@ every change as there is no benefit and a binary repository size drawback.
  - DONE, Remove trailing E from FET part numbers, same reason as above.
  - DONE, Add to and correct the NOTES.md file and mention both the NOTES.md and ERRATA.md files in the CPU sheet such that it's in the first page of the PDF. Optionally remove some text from the schematic pending discussion on the forum.
  - Reorder the connector pin out from most sensitive to most noisy by way of these changes:
-   - 5v tps physically adjacent to tps in
-   - 5v aux physically adjacent to ext map in
+   - DONE, 5v tps physically adjacent to tps in
+   - DONE in same commit as above, 5v aux physically adjacent to ext map in
    - Ignitor drives adjacent to inputs
    - Fuel pump relay drive adjacent to ignitor drives
    - Spare DINs next to spare ADCs
