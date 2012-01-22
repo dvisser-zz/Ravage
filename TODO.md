@@ -19,7 +19,7 @@ every change as there is no benefit and a binary repository size drawback.
    - DONE, 5v tps physically adjacent to tps in
    - DONE in same commit as above, 5v aux physically adjacent to ext map in
    - DONE, Ignitor drives adjacent to inputs
-   - Fuel pump relay drive adjacent to ignitor drives
+   - DONE, Fuel pump relay drive adjacent to ignitor drives
    - Spare DINs next to spare ADCs
    - Rename 12V switched to 12V BRV/Wakeup and move to a small pin with the other inputs
  - Change the connector pin out in the following way as discussed on forum:
