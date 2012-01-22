@@ -11,7 +11,7 @@ every change as there is no benefit and a binary repository size drawback.
  - DONE, Reverse direction of background and reset pin flow designators and change off sheet connector designators to port symbols. 
  - DONE, Find a pretty solution to the load/run direction designator being bi-directional problem, do this post discussion on forum, and change off sheet connector designator to port symobl.
  - DONE, Reverse PJ6/PJ7 on RTC chip, currently incorrect. Thanks Huff!!! :-)
- - Add PP0 and PP4 and AN17-AN20 to spare locations on expansion header. How did we forget spare ADCs? :-o Obvious with the red crosses ;-)
+ - DONE, Add PP0 and PP4 and AN17-AN20 to spare locations on expansion header. How did we forget spare ADCs? :-o Obvious with the red crosses ;-)
  - Remove trailing E in RTC part number, this stands for the packaging type, ie, tape and reel vs tube, and shouldn't be listed here as both E and F are identical silicone.
  - Remove trailing E from FET part numbers, same reason as above.
  - Add to and correct the NOTES.md file and mention both the NOTES.md and ERRATA.md files in the CPU sheet such that it's in the first page of the PDF. Optionally remove some text from the schematic pending discussion on the forum.
