@@ -15,13 +15,13 @@ every change as there is no benefit and a binary repository size drawback.
  - DONE, Remove trailing E in RTC part number, this stands for the packaging type, ie, tape and reel vs tube, and shouldn't be listed here as both E and F are identical silicone.
  - DONE, Remove trailing E from FET part numbers, same reason as above.
  - DONE, Add to and correct the NOTES.md file and mention both the NOTES.md and ERRATA.md files in the CPU sheet such that it's in the first page of the PDF. Optionally remove some text from the schematic pending discussion on the forum.
- - Reorder the connector pin out from most sensitive to most noisy by way of these changes:
+ - COMPLETED, Reorder the connector pin out from most sensitive to most noisy by way of these changes:
    - DONE, 5v tps physically adjacent to tps in
    - DONE in same commit as above, 5v aux physically adjacent to ext map in
    - DONE, Ignitor drives adjacent to inputs
    - DONE, Fuel pump relay drive adjacent to ignitor drives
    - DONE, Spare DINs next to spare ADCs
-   - Rename 12V switched to 12V BRV/Wakeup and move to a small pin with the other inputs
+   - DONE, Rename 12V switched to 12V BRV/Wakeup and move to a small pin with the other inputs
  - Change the connector pin out in the following way as discussed on forum:
    - Add extra big pin to injector ground scheme, one on 1,3,5, the other on 2,4,6
    - Add extra big pin to ACC ground scheme, spread the pins across them similar to injector ground
