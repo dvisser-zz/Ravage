@@ -8,7 +8,7 @@ every change as there is no benefit and a binary repository size drawback.
  - DONE, Make Load/Run jumper normally open
  - DONE, Fix "Cell LED" to be "CEL LED".
  - DONE, Change the angle of the entries into the connector sheet on the CPU page to be sloping down into it and respect the flow. Noticed you fixed the ones below it in header sheet change.
- - Reverse direction of background and reset pin flow designators and change off sheet connector designators to port symbols. 
+ - DONE, Reverse direction of background and reset pin flow designators and change off sheet connector designators to port symbols. 
  - Find a pretty solution to the load/run direction designator being bi-directional problem, do this post discussion on forum, and change off sheet connector designator to port symobl.
  - Reverse PJ6/PJ7 on RTC chip, currently incorrect. Thanks Huff!!! :-)
  - Add PP0 and PP4 and AN17-AN20 to spare locations on expansion header. How did we forget spare ADCs? :-o Obvious with the red crosses ;-)
