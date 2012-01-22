@@ -22,9 +22,9 @@ every change as there is no benefit and a binary repository size drawback.
    - DONE, Fuel pump relay drive adjacent to ignitor drives
    - DONE, Spare DINs next to spare ADCs
    - DONE, Rename 12V switched to 12V BRV/Wakeup and move to a small pin with the other inputs
- - Change the connector pin out in the following way as discussed on forum:
-   - Add extra big pin to injector ground scheme, one on 1,3,5, the other on 2,4,6
-   - Add extra big pin to ACC ground scheme, spread the pins across them similar to injector ground
+ - COMPLETED, Change the connector pin out in the following way as discussed on forum:
+   - DONE, Add extra big pin to injector ground scheme, one on 1,3,5, the other on 2,4,6
+   - DONE in same commit as above, Add extra big pin to ACC ground scheme, spread the pins across them similar to injector ground
    - DONE, Move one knock input to a dedicated connector and the other two pads/header for DIY addition
  - DONE, Change SD card level shift IC schematic symbol to same as that used for other IC's in the schematic.
  - DONE, Add 10uF 10V tantalum capacitors in parallel with C4, C6, C11 and C12 in accordance with MC9S12XDP512 datasheet recommendations (Table C-1).
