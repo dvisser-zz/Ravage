@@ -27,7 +27,7 @@ every change as there is no benefit and a binary repository size drawback.
    - Add extra big pin to ACC ground scheme, spread the pins across them similar to injector ground
    - Move one knock input to a dedicated connector and the other two pads/header for DIY addition
  - Change SD card level shift IC schematic symbol to same as that used for other IC's in the schematic.
- - Add 10uF 10V tantalum capacitors in parallel with C4, C6, C11 and C12 in accordance with MC9S12XDP512 datasheet recommendations (Table C-1).
+ - DONE, Add 10uF 10V tantalum capacitors in parallel with C4, C6, C11 and C12 in accordance with MC9S12XDP512 datasheet recommendations (Table C-1).
 
 ### SD card sheet changes
 
