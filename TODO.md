@@ -5,29 +5,36 @@ file and the changed files committed together. After a session of N changes the
 PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
- - DONE, Make Load/Run jumper normally open
- - DONE, Fix "Cell LED" to be "CEL LED".
- - DONE, Change the angle of the entries into the connector sheet on the CPU page to be sloping down into it and respect the flow. Noticed you fixed the ones below it in header sheet change.
- - DONE, Reverse direction of background and reset pin flow designators and change off sheet connector designators to port symbols. 
- - DONE, Find a pretty solution to the load/run direction designator being bi-directional problem, do this post discussion on forum, and change off sheet connector designator to port symobl.
- - DONE, Reverse PJ6/PJ7 on RTC chip, currently incorrect. Thanks Huff!!! :-)
- - DONE, Add PP0 and PP4 and AN17-AN20 to spare locations on expansion header. How did we forget spare ADCs? :-o Obvious with the red crosses ;-)
- - DONE, Remove trailing E in RTC part number, this stands for the packaging type, ie, tape and reel vs tube, and shouldn't be listed here as both E and F are identical silicone.
- - DONE, Remove trailing E from FET part numbers, same reason as above.
- - DONE, Add to and correct the NOTES.md file and mention both the NOTES.md and ERRATA.md files in the CPU sheet such that it's in the first page of the PDF. Optionally remove some text from the schematic pending discussion on the forum.
- - COMPLETED, Reorder the connector pin out from most sensitive to most noisy by way of these changes:
-   - DONE, 5v tps physically adjacent to tps in
-   - DONE in same commit as above, 5v aux physically adjacent to ext map in
-   - DONE, Ignitor drives adjacent to inputs
-   - DONE, Fuel pump relay drive adjacent to ignitor drives
-   - DONE, Spare DINs next to spare ADCs
-   - DONE, Rename 12V switched to 12V BRV/Wakeup and move to a small pin with the other inputs
- - COMPLETED, Change the connector pin out in the following way as discussed on forum:
-   - DONE, Add extra big pin to injector ground scheme, one on 1,3,5, the other on 2,4,6
-   - DONE in same commit as above, Add extra big pin to ACC ground scheme, spread the pins across them similar to injector ground
-   - DONE, Move one knock input to a dedicated connector and the other two pads/header for DIY addition
- - DONE, Change SD card level shift IC schematic symbol to same as that used for other IC's in the schematic.
- - DONE, Add 10uF 10V tantalum capacitors in parallel with C4, C6, C11 and C12 in accordance with MC9S12XDP512 datasheet recommendations (Table C-1).
+ - Make direction of all connector sheet ground off sheet symbols consistent
+ - Connect knock input directly to CH1 input and put CH2 input on a single header pin for DIY connection
+ - Add a note to the connector sheet stating that L pins and M pins are capable of higher current
+ - Mirror crystal circuit left to right with the wires running down on the left and extend the CPU power caps to be a bit wider, higher, clearer and equal in size to each other
+ - Extend the wires from PE 5,6,7 directly out without the steps
+ - Remove the notes on capacitors and resistors from the PLL and Clock as these are standard values now
+ - Combine the two grounds on the BDM header schematic
+ - Split the sentence "Please refer to NOTES.md and ERRATA.md files for important design information." across two lines between 'Errata.md' and 'files' and surround with a dotted line. Current font size is OK.
+ - Change "FUEL PUMP RELAY" to "FP RELAY" for net names, but leave "Fuel Pump Relay Driver" on the LSD sheeti
+ - Change "LOAD/RUN" port label to just "LOAD" to respect the fact that the default state is doing a burnout, not loading code. (and allow it to not overlap the wire label next to it)
+ - Change text in "Serial Monitor" box from "SM LOAD/RUN Jumper" to "Firmware Load Jumper"
+ - Make the Extra analogue input green box be the same width as the others in that column
+ - Make the second column of green boxes all the same width as each other, probably the same as RS232 or SD or USB currently is, use your discretion
+ - Change text on VR sheet from "optional" (one of which is in the wrong place) to:
+
+This resistor
+for VR ONLY.
+
+and
+
+This resistor for
+hall/opto ONLY.
+
+ - Connector pin order changes:
+  - Move Sensor Grounds close to: IAT,CHT,TPS,EGO,MAT,EXT MAP,SPARE ADC 1,SPARE ADC 2,+5V TPS,+5V AUX and extend both traces out past the other port symbols before joining
+  - Move "+12V BRV/WAKEUP" between spare ADCs and spare DINs
+  - Move spare LSD up closer to power/grounds
+  - Move ISCV up closer to spare LSD
+  - Move Injector outputs to right hand side of drawing
+  - Move fuel pump relay drive to right hand side of drawing, it must be in the last 1-4 pin set, next to the ignitor drives.
 
 ### SD card sheet changes
 
@@ -37,7 +44,6 @@ Discuss all SD card sheet changes before doing anything, skype, IRC and forum: h
  - Move 3.3V regulator to 12V input such that sharp current changes don't affect our analogue stuff
  - Use regulator with enable input and parallel with analogue enable on 5V setup
  - Reduce post reg capacitor to 47uF tantalum
- - Add 200uF capacitor(s) to input of 3.3V reg
  - Change 1.0uF to 0.1uF ceramics on both sides of 3.3V reg
  - Move all 3.3V power supply caps to power supply sheet
 
@@ -48,7 +54,6 @@ then check or be confirmed good and then locked down.
 
 Known issues which don't have a solution 100% nailed down yet.
 
- - Consider adding 10uF caps to key power supply pins on the CPU
  - Power supply page - requires design, discuss http://forum.diyefi.org/viewtopic.php?f=58&t=1478
  - Finalise VR interface LEDs - Dan
  - Select digital input resistor values - Can't, needs diode part selection
@@ -57,9 +62,45 @@ Known issues which don't have a solution 100% nailed down yet.
  - Double check that opto will work with unchanged SM - Fred
  - Tune the ADC input filters - Fred + consultation
  - PLL cap that is not sensitive to mechanical noise - Maybe
- - All pages, as the last step, check that power and ground connections are consistent and correct - Fred
+ - Annotate all components in the schematics
+ - Add to and correct the NOTES.md file
 
 And perhaps more.
+
+### Connector pin ordering
+
+At least four concerns guide the selection of pin to function mappings. By far
+the most important of these is noise considerations. For this reason the layout
+should maintain the following block ordering:
+
+ 1. RPM Inputs (hyper sensitive)
+ 2. Analogue Inputs (and 5V/Ground for them) (very sensitive)
+ 3. Digital Inputs (very sensitive)
+ 4. Ignition Outputs, low current (not sensitive, not noisy)
+ 5. Fuel pump relay drive (not sensitive, potential to be noisy)
+ 6. Spare LSD Outputs (not sensitive, usually noisy, when used)
+ 7. ISCV Outputs (not sensitive, usually noisy, when used)
+ 8. Injector Outputs (not sensitive, always noisy, when used)
+ 9. Power and Grouds (not sensitive, grounds always noisy)
+
+The other three concerns are these:
+
+ 1. Intuitive User Order
+ 2. Fine grain routing
+ 3. Schematic Aesthetics
+
+1 and 2 are of similar importance, and 3 should take a back seat to the others,
+while still being kept in mind for ease of comprehension. As such the designers
+are free to reorder pins of this sheet during the layout process to facilitate a
+better, lower noise, simpler, cleaner, more compact, more comprehensible for the
+user layout. Aside from the block ordering, the page should be kept with all
+inputs and ignition drivers on the left and all high current and high noise
+connections on the right. This sheet reordering does not need to follow the
+usual process of agree, TODO, action, and can be done at the designers will.
+Although this breaks with the process, it provides significant benefits in both
+speed of development and quality of development. Thus it is worth doing this way.
+
+The spare pins header sheet is subject to the same freedoms for layout reasons.
 
 ### Pre-Layout Lock Down
 
@@ -77,13 +118,13 @@ Locked sheets will be listed here as they are finalised:
  6.  Core analogue inputs @ NO pending value selection
  7.  Extra analogue inputs @ NO pending value selection
  8.  Digital and wake up inputs @ NO pending testing and part selection
- 9.  Knock sensor inputs @ 247e1f109145382aaa98ed5c90c7676b9f4068cd
+ 9.  Knock sensor inputs @ NO pending input style change
  10. Igniter output drivers @ NO pending testing
- 11. Injector output drivers @ b30189a38727387feac949b6a7d1e8129a5f24b3
- 12. GP low side drivers @ b30189a38727387feac949b6a7d1e8129a5f24b3
- 13. 3-wire ISCV drivers @ b30189a38727387feac949b6a7d1e8129a5f24b3
+ 11. Injector output drivers @ 7ad534dc22ba7a4618d42d22ae2bb547ddda230f
+ 12. GP low side drivers @ 7ad534dc22ba7a4618d42d22ae2bb547ddda230f
+ 13. 3-wire ISCV drivers @ 7ad534dc22ba7a4618d42d22ae2bb547ddda230f
  14. SD card slot @ NO pending multiple changes
- 15. Spare IO Header @ NO pending additional pin connections
+ 15. Spare IO Header @ NO pending possible rearrangement
  16. Connector pin out @ NO pending pin rearrangement
 
 ### PDF Sheet Ordering
