@@ -5,6 +5,7 @@ file and the changed files committed together. After a session of N changes the
 PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
+ - Fix reversed 1a port wires on VR sheet green box in MCU sheet
  - Make direction of all connector sheet ground off sheet symbols consistent
  - Connect knock input directly to CH1 input and put CH2 input on a single header pin for DIY connection
  - Add a note to the connector sheet stating that L pins and M pins are capable of higher current
