@@ -8,7 +8,7 @@ every change as there is no benefit and a binary repository size drawback.
  - DONE, Replace TC427COA IC used in ignitor drive schematic with the newer pin compatable TC4427ACOA IC. 
  - DONE, Fix reversed 1a port wires on VR sheet green box in MCU sheet
  - DONE, Make direction of all connector sheet ground off sheet symbols consistent
- - Connect knock input directly to CH1 input and put CH2 input on a single header pin for DIY connection
+ - DONE, Connect knock input directly to CH1 input and put CH2 input on a single header pin for DIY connection
  - Add a note to the connector sheet stating that L pins and M pins are capable of higher current
  - Mirror crystal circuit left to right with the wires running down on the left and extend the CPU power caps to be a bit wider, higher, clearer and equal in size to each other
  - Extend the wires from PE 5,6,7 directly out without the steps
