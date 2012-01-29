@@ -19,7 +19,7 @@ every change as there is no benefit and a binary repository size drawback.
  - DONE, Change "LOAD/RUN" port label to just "LOAD" to respect the fact that the default state is doing a burnout, not loading code. (and allow it to not overlap the wire label next to it)
  - DONE, Change text in "Serial Monitor" box from "SM LOAD/RUN Jumper" to "Firmware Load Jumper"
  - DONE, Make the Extra analogue input green box be the same width as the others in that column
- - Make the second column of green boxes all the same width as each other, probably the same as RS232 or SD or USB currently is, use your discretion
+ - DONE, Make the second column of green boxes all the same width as each other, probably the same as RS232 or SD or USB currently is, use your discretion
  - Change text on VR sheet from "optional" (one of which is in the wrong place) to:
 
 This resistor
