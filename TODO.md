@@ -11,7 +11,7 @@ every change as there is no benefit and a binary repository size drawback.
  - DONE, Connect knock input directly to CH1 input and put CH2 input on a single header pin for DIY connection
  - DONE, Add a note to the connector sheet stating that L pins and M pins are capable of higher current
  - DONE, Mirror crystal circuit left to right with the wires running down on the left and extend the CPU power caps to be a bit wider, higher, clearer and equal in size to each other
- - Extend the wires from PE 5,6,7 directly out without the steps
+ - DONE, Extend the wires from PE 5,6,7 directly out without the steps
  - Remove the notes on capacitors and resistors from the PLL and Clock as these are standard values now
  - Combine the two grounds on the BDM header schematic
  - Split the sentence "Please refer to NOTES.md and ERRATA.md files for important design information." across two lines between 'Errata.md' and 'files' and surround with a dotted line. Current font size is OK.
