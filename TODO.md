@@ -5,7 +5,7 @@ file and the changed files committed together. After a session of N changes the
 PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
- - Replace TC427COA IC used in ignitor drive schematic with the newer pin compatable TC4427ACOA IC. 
+ - DONE, Replace TC427COA IC used in ignitor drive schematic with the newer pin compatable TC4427ACOA IC. 
  - Fix reversed 1a port wires on VR sheet green box in MCU sheet
  - Make direction of all connector sheet ground off sheet symbols consistent
  - Connect knock input directly to CH1 input and put CH2 input on a single header pin for DIY connection
