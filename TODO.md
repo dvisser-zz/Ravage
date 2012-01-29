@@ -15,7 +15,7 @@ every change as there is no benefit and a binary repository size drawback.
  - DONE, Remove the notes on capacitors and resistors from the PLL and Clock as these are standard values now
  - DONE, Combine the two grounds on the BDM header schematic
  - DONE, Split the sentence "Please refer to NOTES.md and ERRATA.md files for important design information." across two lines between 'Errata.md' and 'files' and surround with a dotted line. Current font size is OK.
- - Change "FUEL PUMP RELAY" to "FP RELAY" for net names, but leave "Fuel Pump Relay Driver" on the LSD sheeti
+ - DONE, Change "FUEL PUMP RELAY" to "FP RELAY" for net names, but leave "Fuel Pump Relay Driver" on the LSD sheeti
  - Change "LOAD/RUN" port label to just "LOAD" to respect the fact that the default state is doing a burnout, not loading code. (and allow it to not overlap the wire label next to it)
  - Change text in "Serial Monitor" box from "SM LOAD/RUN Jumper" to "Firmware Load Jumper"
  - Make the Extra analogue input green box be the same width as the others in that column
