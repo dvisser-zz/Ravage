@@ -20,7 +20,7 @@ every change as there is no benefit and a binary repository size drawback.
  - DONE, Change text in "Serial Monitor" box from "SM LOAD/RUN Jumper" to "Firmware Load Jumper"
  - DONE, Make the Extra analogue input green box be the same width as the others in that column
  - DONE, Make the second column of green boxes all the same width as each other, probably the same as RS232 or SD or USB currently is, use your discretion
- - Change text on VR sheet from "optional" (one of which is in the wrong place) to:
+ - DONE, Change text on VR sheet from "optional" (one of which is in the wrong place) to:
 
 This resistor
 for VR ONLY.
