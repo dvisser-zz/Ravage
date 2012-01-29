@@ -13,7 +13,7 @@ every change as there is no benefit and a binary repository size drawback.
  - DONE, Mirror crystal circuit left to right with the wires running down on the left and extend the CPU power caps to be a bit wider, higher, clearer and equal in size to each other
  - DONE, Extend the wires from PE 5,6,7 directly out without the steps
  - DONE, Remove the notes on capacitors and resistors from the PLL and Clock as these are standard values now
- - Combine the two grounds on the BDM header schematic
+ - DONE, Combine the two grounds on the BDM header schematic
  - Split the sentence "Please refer to NOTES.md and ERRATA.md files for important design information." across two lines between 'Errata.md' and 'files' and surround with a dotted line. Current font size is OK.
  - Change "FUEL PUMP RELAY" to "FP RELAY" for net names, but leave "Fuel Pump Relay Driver" on the LSD sheeti
  - Change "LOAD/RUN" port label to just "LOAD" to respect the fact that the default state is doing a burnout, not loading code. (and allow it to not overlap the wire label next to it)
