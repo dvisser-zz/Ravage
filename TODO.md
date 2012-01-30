@@ -30,7 +30,7 @@ and
 This resistor for
 hall/opto ONLY.
 
- - Connector pin order changes:
+ - DONE, all below in single commit, Connector pin order changes:
   - Move Sensor Grounds close to: IAT,CHT,TPS,EGO,MAT,EXT MAP,SPARE ADC 1,SPARE ADC 2,+5V TPS,+5V AUX and extend both traces out past the other port symbols before joining
   - Move "+12V BRV/WAKEUP" between spare ADCs and spare DINs
   - Move spare LSD up closer to power/grounds
