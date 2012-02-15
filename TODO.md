@@ -5,38 +5,24 @@ file and the changed files committed together. After a session of N changes the
 PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
- - DONE, Replace TC427COA IC used in ignitor drive schematic with the newer pin compatable TC4427ACOA IC. 
- - DONE, Fix reversed 1a port wires on VR sheet green box in MCU sheet
- - DONE, Make direction of all connector sheet ground off sheet symbols consistent
- - DONE, Connect knock input directly to CH1 input and put CH2 input on a single header pin for DIY connection
- - DONE, Add a note to the connector sheet stating that L pins and M pins are capable of higher current
- - DONE, Mirror crystal circuit left to right with the wires running down on the left and extend the CPU power caps to be a bit wider, higher, clearer and equal in size to each other
- - DONE, Extend the wires from PE 5,6,7 directly out without the steps
- - DONE, Remove the notes on capacitors and resistors from the PLL and Clock as these are standard values now
- - DONE, Combine the two grounds on the BDM header schematic
- - DONE, Split the sentence "Please refer to NOTES.md and ERRATA.md files for important design information." across two lines between 'Errata.md' and 'files' and surround with a dotted line. Current font size is OK.
- - DONE, Change "FUEL PUMP RELAY" to "FP RELAY" for net names, but leave "Fuel Pump Relay Driver" on the LSD sheeti
- - DONE, Change "LOAD/RUN" port label to just "LOAD" to respect the fact that the default state is doing a burnout, not loading code. (and allow it to not overlap the wire label next to it)
- - DONE, Change text in "Serial Monitor" box from "SM LOAD/RUN Jumper" to "Firmware Load Jumper"
- - DONE, Make the Extra analogue input green box be the same width as the others in that column
- - DONE, Make the second column of green boxes all the same width as each other, probably the same as RS232 or SD or USB currently is, use your discretion
- - DONE, Change text on VR sheet from "optional" (one of which is in the wrong place) to:
-
-This resistor
-for VR ONLY.
-
-and
-
-This resistor for
-hall/opto ONLY.
-
- - DONE, all below in single commit, Connector pin order changes:
-  - Move Sensor Grounds close to: IAT,CHT,TPS,EGO,MAT,EXT MAP,SPARE ADC 1,SPARE ADC 2,+5V TPS,+5V AUX and extend both traces out past the other port symbols before joining
-  - Move "+12V BRV/WAKEUP" between spare ADCs and spare DINs
-  - Move spare LSD up closer to power/grounds
-  - Move ISCV up closer to spare LSD
-  - Move Injector outputs to right hand side of drawing
-  - Move fuel pump relay drive to right hand side of drawing, it must be in the last 1-4 pin set, next to the ignitor drives.
+ - Change TC4427ACOA to TC4427VOA and add a note allow builders to derate to TC4427EOA, or use the previous chip in 125C, if they choose.
+ - Fix totally wrong PLL circuit! :-o How did we all miss that? :-/
+ - Put the crystal circuit and left hand decoupling caps back the way they were before but flip it left to right such that the two wires are hard on the left just like they are hard on the right at the moment.This will allow the wires running down on the far left and make rooom to extend the CPU power caps to be a bit wider, higher, clearer and equal in size to each other, but i the earlier style. Sorry for being unclear and wasting your time! :-(
+ - Change "FUEL PUMP RELAY" to "FP RELAY" on connector sheet
+ - Make Sensor Ground traces follow same right angle path as other traces and have the ground symbol out to the left just past the other labels
+ - Make connector pin out match this diagram: http://stuff.fredcooke.com/RavagePinOutAttempt2.png while still maintaining the left/right split and right angle traces.
+ - Specify tight tolerance resistors for setting adjustable Vreg
+ - Add notes to notes file about VR input resistors and caps being 200V and preferably 500mW
+ - Add notes to notes file about VR 5k Shunt resistor being high wattage
+ - Add notes to notes file about 470ohm adc current limit resistors being 250mW
+ - Add notes to notes file about 200ohm ignition current limit resistors being 2W
+ - Ground tabs of regulators in power supply sheet
+ - Increase 22uF cap on output of LM2941S Reg to 47uF
+ - Lower value of pull up on input to regulator from 33k to 20k: 6/20000 = 0.0003 - allows it to function at our lowest voltage of 6V
+ - Add ferrite bead to 5V USB input before caps to prevent USB power noise corrupting comms, something like this: http://nz.element14.com/murata/blm18pg300sn1d/ferrite-bead-0603-case-30ohm/dp/1515741RL
+ - Add LEDs to 5V switched, BRV/key power, and FTDI pin CBUS3
+ - Change tx/rx LED resistors to 1k to reduce brightness
+ - Expose CBUS2 and CBUS4 of FT232 to pads for DIY use
 
 ### SD card sheet changes
 
@@ -57,10 +43,10 @@ then check or be confirmed good and then locked down.
 Known issues which don't have a solution 100% nailed down yet.
 
  - Power supply page - requires design, discuss http://forum.diyefi.org/viewtopic.php?f=58&t=1478
- - Finalise VR interface LEDs - Dan
+ - Finalise VR interface LEDs - Dan http://forum.diyefi.org/viewtopic.php?f=58&t=1510
  - Select digital input resistor values - Can't, needs diode part selection
  - Finalise selection of wakeup pin - Fred
- - Verify that TC427COA can drive 100mA continuous - Dan
+ - Verify that TC427COA can drive 100mA continuous - Dan http://forum.diyefi.org/viewtopic.php?f=9&t=1188
  - Double check that opto will work with unchanged SM - Fred
  - Tune the ADC input filters - Fred + consultation
  - PLL cap that is not sensitive to mechanical noise - Maybe
@@ -123,7 +109,7 @@ Locked sheets will be listed here as they are finalised:
  9.  Knock sensor inputs @ NO pending input style change
  10. Igniter output drivers @ NO pending testing
  11. Injector output drivers @ 7ad534dc22ba7a4618d42d22ae2bb547ddda230f
- 12. GP low side drivers @ 7ad534dc22ba7a4618d42d22ae2bb547ddda230f
+ 12. GP low side drivers @ 0e0ec7b1f4f0095ec0caf7929a33b819e120481e
  13. 3-wire ISCV drivers @ 7ad534dc22ba7a4618d42d22ae2bb547ddda230f
  14. SD card slot @ NO pending multiple changes
  15. Spare IO Header @ NO pending possible rearrangement
