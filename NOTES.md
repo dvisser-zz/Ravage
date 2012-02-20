@@ -8,4 +8,6 @@ from those defaults.
  - Pull up resistors on thermistor inputs and voltage measurement divider network resistors to be 0.1% metal film.
  - Capacitors 1.0uF and under to be X7R ceramic, and in very small values, C0G/NP0.
  - All polarised capacitors are tantalumn, 35V minimum when exposed to battery voltage, 10V minimum for internal regulated voltages.
+ - VR input resistors to be 200V rated and have a power rating of 500mW or greater. 
+ - VR input capacitors must be 200V rated. 
 
