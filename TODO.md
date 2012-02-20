@@ -11,7 +11,7 @@ every change as there is no benefit and a binary repository size drawback.
  - DONE, Change "FUEL PUMP RELAY" to "FP RELAY" on connector sheet
  - DONE, Make Sensor Ground traces follow same right angle path as other traces and have the ground symbol out to the left just past the other labels
  - Make connector pin out match this diagram: http://stuff.fredcooke.com/RavagePinOutAttempt2.png while still maintaining the left/right split and right angle traces.
- - Specify tight tolerance resistors for setting adjustable Vreg
+ - DONE, Specify tight tolerance resistors for setting adjustable Vreg
  - Add notes to notes file about VR input resistors and caps being 200V and preferably 500mW
  - Add notes to notes file about VR 5k Shunt resistor being high wattage
  - Add notes to notes file about 470ohm adc current limit resistors being 250mW
