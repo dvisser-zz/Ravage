@@ -11,4 +11,5 @@ from those defaults.
  - VR input resistors to be 200V rated and have a power rating of 500mW or greater. 
  - VR input capacitors must be 200V rated. 
  - VR 5k shunt resistor must be 500mW or greater. 
+ - ADC 470R current limiting resistors must be 250mW or greater. 
 
