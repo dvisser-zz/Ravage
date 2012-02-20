@@ -15,7 +15,7 @@ every change as there is no benefit and a binary repository size drawback.
  - DONE, Add notes to notes file about VR input resistors and caps being 200V and preferably 500mW
  - DONE, Add notes to notes file about VR 5k Shunt resistor being high wattage
  - DONE, Add notes to notes file about 470ohm adc current limit resistors being 250mW
- - Add notes to notes file about 200ohm ignition current limit resistors being 2W
+ - DONE, Add notes to notes file about 200ohm ignition current limit resistors being 2W
  - Ground tabs of regulators in power supply sheet
  - Increase 22uF cap on output of LM2941S Reg to 47uF
  - Lower value of pull up on input to regulator from 33k to 20k: 6/20000 = 0.0003 - allows it to function at our lowest voltage of 6V

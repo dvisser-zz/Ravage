@@ -12,4 +12,5 @@ from those defaults.
  - VR input capacitors must be 200V rated. 
  - VR 5k shunt resistor must be 500mW or greater. 
  - ADC 470R current limiting resistors must be 250mW or greater. 
+ - Ignitor drive output 200R current limiting resistors must be 2W or greater. 
 
