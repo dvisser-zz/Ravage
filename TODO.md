@@ -20,7 +20,7 @@ every change as there is no benefit and a binary repository size drawback.
  - DONE, Increase 22uF cap on output of LM2941S Reg to 47uF
  - DONE, Lower value of pull up on input to regulator from 33k to 20k: 6/20000 = 0.0003 - allows it to function at our lowest voltage of 6V
  - DONE, Add ferrite bead to 5V USB input before caps to prevent USB power noise corrupting comms, something like this: http://nz.element14.com/murata/blm18pg300sn1d/ferrite-bead-0603-case-30ohm/dp/1515741RL
- - Add LEDs to 5V switched, BRV/key power, and FTDI pin CBUS3
+ - DONE, Add LEDs to 5V switched, BRV/key power, and FTDI pin CBUS3
  - Change tx/rx LED resistors to 1k to reduce brightness
  - Expose CBUS2 and CBUS4 of FT232 to pads for DIY use
 
