@@ -16,7 +16,7 @@ every change as there is no benefit and a binary repository size drawback.
  - DONE, Add notes to notes file about VR 5k Shunt resistor being high wattage
  - DONE, Add notes to notes file about 470ohm adc current limit resistors being 250mW
  - DONE, Add notes to notes file about 200ohm ignition current limit resistors being 2W
- - Ground tabs of regulators in power supply sheet
+ - DONE, Ground tabs of regulators in power supply sheet
  - Increase 22uF cap on output of LM2941S Reg to 47uF
  - Lower value of pull up on input to regulator from 33k to 20k: 6/20000 = 0.0003 - allows it to function at our lowest voltage of 6V
  - Add ferrite bead to 5V USB input before caps to prevent USB power noise corrupting comms, something like this: http://nz.element14.com/murata/blm18pg300sn1d/ferrite-bead-0603-case-30ohm/dp/1515741RL
