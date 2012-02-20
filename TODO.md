@@ -5,7 +5,7 @@ file and the changed files committed together. After a session of N changes the
 PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
- - Change TC4427ACOA to TC4427VOA and add a note allow builders to derate to TC4427EOA, or use the previous chip in 125C, if they choose.
+ - DONE, Change TC4427ACOA to TC4427VOA and add a note allow builders to derate to TC4427EOA, or use the previous chip in 125C, if they choose.
  - Fix totally wrong PLL circuit! :-o How did we all miss that? :-/
  - Put the crystal circuit and left hand decoupling caps back the way they were before but flip it left to right such that the two wires are hard on the left just like they are hard on the right at the moment.This will allow the wires running down on the far left and make rooom to extend the CPU power caps to be a bit wider, higher, clearer and equal in size to each other, but i the earlier style. Sorry for being unclear and wasting your time! :-(
  - Change "FUEL PUMP RELAY" to "FP RELAY" on connector sheet
