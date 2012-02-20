@@ -10,4 +10,5 @@ from those defaults.
  - All polarised capacitors are tantalumn, 35V minimum when exposed to battery voltage, 10V minimum for internal regulated voltages.
  - VR input resistors to be 200V rated and have a power rating of 500mW or greater. 
  - VR input capacitors must be 200V rated. 
+ - VR 5k shunt resistor must be 500mW or greater. 
 
