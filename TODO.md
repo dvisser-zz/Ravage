@@ -10,7 +10,7 @@ every change as there is no benefit and a binary repository size drawback.
  - DONE, Put the crystal circuit and left hand decoupling caps back the way they were before but flip it left to right such that the two wires are hard on the left just like they are hard on the right at the moment.This will allow the wires running down on the far left and make rooom to extend the CPU power caps to be a bit wider, higher, clearer and equal in size to each other, but i the earlier style. Sorry for being unclear and wasting your time! :-(
  - DONE, Change "FUEL PUMP RELAY" to "FP RELAY" on connector sheet
  - DONE, Make Sensor Ground traces follow same right angle path as other traces and have the ground symbol out to the left just past the other labels
- - Make connector pin out match this diagram: http://stuff.fredcooke.com/RavagePinOutAttempt2.png while still maintaining the left/right split and right angle traces.
+ - DONE, Make connector pin out match this diagram: http://stuff.fredcooke.com/RavagePinOutAttempt2.png while still maintaining the left/right split and right angle traces.
  - DONE, Specify tight tolerance resistors for setting adjustable Vreg
  - DONE, Add notes to notes file about VR input resistors and caps being 200V and preferably 500mW
  - DONE, Add notes to notes file about VR 5k Shunt resistor being high wattage
