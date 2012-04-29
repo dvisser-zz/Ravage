@@ -5,24 +5,19 @@ file and the changed files committed together. After a session of N changes the
 PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
- - DONE, Change TC4427ACOA to TC4427VOA and add a note allow builders to derate to TC4427EOA, or use the previous chip in 125C, if they choose.
- - DONE, Fix totally wrong PLL circuit! :-o How did we all miss that? :-/
- - DONE, Put the crystal circuit and left hand decoupling caps back the way they were before but flip it left to right such that the two wires are hard on the left just like they are hard on the right at the moment.This will allow the wires running down on the far left and make rooom to extend the CPU power caps to be a bit wider, higher, clearer and equal in size to each other, but i the earlier style. Sorry for being unclear and wasting your time! :-(
- - DONE, Change "FUEL PUMP RELAY" to "FP RELAY" on connector sheet
- - DONE, Make Sensor Ground traces follow same right angle path as other traces and have the ground symbol out to the left just past the other labels
- - DONE, Make connector pin out match this diagram: http://stuff.fredcooke.com/RavagePinOutAttempt2.png while still maintaining the left/right split and right angle traces.
- - DONE, Specify tight tolerance resistors for setting adjustable Vreg
- - DONE, Add notes to notes file about VR input resistors and caps being 200V and preferably 500mW
- - DONE, Add notes to notes file about VR 5k Shunt resistor being high wattage
- - DONE, Add notes to notes file about 470ohm adc current limit resistors being 250mW
- - DONE, Add notes to notes file about 200ohm ignition current limit resistors being 2W
- - DONE, Ground tabs of regulators in power supply sheet
- - DONE, Increase 22uF cap on output of LM2941S Reg to 47uF
- - DONE, Lower value of pull up on input to regulator from 33k to 20k: 6/20000 = 0.0003 - allows it to function at our lowest voltage of 6V
- - DONE, Add ferrite bead to 5V USB input before caps to prevent USB power noise corrupting comms, something like this: http://nz.element14.com/murata/blm18pg300sn1d/ferrite-bead-0603-case-30ohm/dp/1515741RL
- - DONE, Add LEDs to 5V switched, BRV/key power, and FTDI pin CBUS3
- - DONE, Change tx/rx LED resistors to 1k to reduce brightness
- - DONE, Expose CBUS2 and CBUS4 of FT232 to pads for DIY use
+Regressions/tweaks:
+
+ - Move the CPU decouple stuff to the left slightly to make the RHS copy match the other three
+ - Make Sensor Ground traces follow same right angle path as other traces and have the ground symbol out to the left just past the other labels, and keep the connector block order to all of the labels, ie, move rpm1b down and tps and one of the grounds up
+ - Reattach pin 3 of LM2941S which was accidentally removed with last change set
+
+New items:
+
+ - Correct Micro SD card socket wiring. Currently setup incorrectly as SD card. http://www.planetmobile.it/jumpjack/adattatore/pinout-eng.html http://www.hobbytronics.co.uk/pinout-microsd
+ - Knock, change pin 14 to whatever we agree on on the forum: http://forum.diyefi.org/viewtopic.php?p=26128#p26128
+ - Digital inputs, set value in schem and part in NOTES.md to whatever we agree on on the forum: http://forum.diyefi.org/viewtopic.php?p=26145#p26145
+
+review visual diff
 
 ### SD card sheet changes
 
@@ -42,14 +37,14 @@ then check or be confirmed good and then locked down.
 
 Known issues which don't have a solution 100% nailed down yet.
 
+ - Determine best isolation solution with real world testing: ACPL-M71T, adum3201, Si86xx http://forum.diyefi.org/viewtopic.php?f=58&t=1597
  - Power supply page - requires design, discuss http://forum.diyefi.org/viewtopic.php?f=58&t=1478
  - Finalise VR interface LEDs - Dan http://forum.diyefi.org/viewtopic.php?f=58&t=1510
- - Select digital input resistor values - Can't, needs diode part selection
+ - Select digital input resistor values - Can't, needs diode part selection - TODO items + add to notes
  - Finalise selection of wakeup pin - Fred
- - Verify that TC427COA can drive 100mA continuous - Dan http://forum.diyefi.org/viewtopic.php?f=9&t=1188
- - Double check that opto will work with unchanged SM - Fred
+ - Verify that TC4427COA can drive 100mA continuous - Dan http://forum.diyefi.org/viewtopic.php?f=9&t=1188
+ - Develop new improved SM - Fred http://forum.diyefi.org/viewtopic.php?f=8&t=1232
  - Tune the ADC input filters - Fred + consultation
- - PLL cap that is not sensitive to mechanical noise - Maybe
  - Annotate all components in the schematics
  - Add to and correct the NOTES.md file
 
@@ -89,6 +84,8 @@ Although this breaks with the process, it provides significant benefits in both
 speed of development and quality of development. Thus it is worth doing this way.
 
 The spare pins header sheet is subject to the same freedoms for layout reasons.
+
+Pin ordering follows this diagram, except the grounds have been rearranged http://stuff.fredcooke.com/RavagePinOutAttempt2.png
 
 ### Pre-Layout Lock Down
 
