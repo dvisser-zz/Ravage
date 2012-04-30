@@ -5,19 +5,8 @@ file and the changed files committed together. After a session of N changes the
 PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
-Regressions/tweaks:
-
- - DONE, Move the CPU decouple stuff to the left slightly to make the RHS copy match the other three
- - DONE, Make Sensor Ground traces follow same right angle path as other traces and have the ground symbol out to the left just past the other labels, and keep the connector block order to all of the labels, ie, move rpm1b down and tps and one of the grounds up
- - DONE, Reattach pin 3 of LM2941S which was accidentally removed with last change set
-
-New items:
-
- - DONE, Correct Micro SD card socket wiring. Currently setup incorrectly as SD card. http://www.planetmobile.it/jumpjack/adattatore/pinout-eng.html http://www.hobbytronics.co.uk/pinout-microsd
- - DONE, LEFT AS IS FOR NOW! Knock, change pin 14 to whatever we agree on on the forum: http://forum.diyefi.org/viewtopic.php?p=26128#p26128
- - DONE, Digital inputs, set value in schem and part in NOTES.md to whatever we agree on on the forum: http://forum.diyefi.org/viewtopic.php?p=26145#p26145
-
-review visual diff
+ - DONE, SPUDMN to review: Correct Micro SD card socket wiring. Currently setup incorrectly as SD card. http://www.planetmobile.it/jumpjack/adattatore/pinout-eng.html http://www.hobbytronics.co.uk/pinout-microsd
+ - DONE, LEFT AS IS FOR NOW! Remove if Peter is happy. Knock, change pin 14 to whatever we agree on on the forum: http://forum.diyefi.org/viewtopic.php?p=26128#p26128
 
 ### SD card sheet changes
 
@@ -102,7 +91,7 @@ Locked sheets will be listed here as they are finalised:
  5.  RPM conditioned inputs @ NO pending testing
  6.  Core analogue inputs @ NO pending value selection
  7.  Extra analogue inputs @ NO pending value selection
- 8.  Digital and wake up inputs @ NO pending testing and part selection
+ 8.  Digital and wake up inputs @ NO pending wake up testing
  9.  Knock sensor inputs @ NO pending input style change
  10. Igniter output drivers @ NO pending testing
  11. Injector output drivers @ 7ad534dc22ba7a4618d42d22ae2bb547ddda230f
