@@ -8,7 +8,7 @@ every change as there is no benefit and a binary repository size drawback.
 Regressions/tweaks:
 
  - DONE, Move the CPU decouple stuff to the left slightly to make the RHS copy match the other three
- - Make Sensor Ground traces follow same right angle path as other traces and have the ground symbol out to the left just past the other labels, and keep the connector block order to all of the labels, ie, move rpm1b down and tps and one of the grounds up
+ - DONE, Make Sensor Ground traces follow same right angle path as other traces and have the ground symbol out to the left just past the other labels, and keep the connector block order to all of the labels, ie, move rpm1b down and tps and one of the grounds up
  - DONE, Reattach pin 3 of LM2941S which was accidentally removed with last change set
 
 New items:
