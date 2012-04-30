@@ -32,6 +32,7 @@ Known issues which don't have a solution 100% nailed down yet.
  - Finalise selection of wakeup pin - Fred http://forum.diyefi.org/viewtopic.php?f=8&t=1266
  - Verify that TC4427COA can drive 100mA continuous - Dan http://forum.diyefi.org/viewtopic.php?f=9&t=1188
  - Develop new improved SM - Fred http://forum.diyefi.org/viewtopic.php?f=8&t=1232
+ - Confirm pin selection for simple bit banged IO like tacho etc: Fred + others: http://forum.diyefi.org/viewtopic.php?f=8&t=1676
  - Tune the ADC input filters - Fred + consultation
  - Annotate all components in the schematics
  - Add to and correct the NOTES.md file
