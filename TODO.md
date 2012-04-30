@@ -14,7 +14,7 @@ Regressions/tweaks:
 New items:
 
  - DONE, Correct Micro SD card socket wiring. Currently setup incorrectly as SD card. http://www.planetmobile.it/jumpjack/adattatore/pinout-eng.html http://www.hobbytronics.co.uk/pinout-microsd
- - Knock, change pin 14 to whatever we agree on on the forum: http://forum.diyefi.org/viewtopic.php?p=26128#p26128
+ - DONE, LEFT AS IS FOR NOW! Knock, change pin 14 to whatever we agree on on the forum: http://forum.diyefi.org/viewtopic.php?p=26128#p26128
  - Digital inputs, set value in schem and part in NOTES.md to whatever we agree on on the forum: http://forum.diyefi.org/viewtopic.php?p=26145#p26145
 
 review visual diff
