@@ -29,8 +29,7 @@ Known issues which don't have a solution 100% nailed down yet.
  - Determine best isolation solution with real world testing: ACPL-M71T, adum3201, Si86xx http://forum.diyefi.org/viewtopic.php?f=58&t=1597
  - Power supply page - requires design, discuss http://forum.diyefi.org/viewtopic.php?f=58&t=1478
  - Finalise VR interface LEDs - Dan http://forum.diyefi.org/viewtopic.php?f=58&t=1510
- - Select digital input resistor values - Can't, needs diode part selection - TODO items + add to notes
- - Finalise selection of wakeup pin - Fred
+ - Finalise selection of wakeup pin - Fred http://forum.diyefi.org/viewtopic.php?f=8&t=1266
  - Verify that TC4427COA can drive 100mA continuous - Dan http://forum.diyefi.org/viewtopic.php?f=9&t=1188
  - Develop new improved SM - Fred http://forum.diyefi.org/viewtopic.php?f=8&t=1232
  - Tune the ADC input filters - Fred + consultation
