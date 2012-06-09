@@ -5,7 +5,6 @@ file and the changed files committed together. After a session of N changes the
 PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
- - DONE, SPUDMN to review: Correct Micro SD card socket wiring. Currently setup incorrectly as SD card. http://www.planetmobile.it/jumpjack/adattatore/pinout-eng.html http://www.hobbytronics.co.uk/pinout-microsd
  - DONE, LEFT AS IS FOR NOW! Remove if Peter is happy. Knock, change pin 14 to whatever we agree on on the forum: http://forum.diyefi.org/viewtopic.php?p=26128#p26128
 
 ### SD card sheet changes
@@ -30,6 +29,8 @@ Known issues which don't have a solution 100% nailed down yet.
  - Power supply page - requires design, discuss http://forum.diyefi.org/viewtopic.php?f=58&t=1478
  - Finalise VR interface LEDs - Dan http://forum.diyefi.org/viewtopic.php?f=58&t=1510
  - Finalise selection of wakeup pin - Fred http://forum.diyefi.org/viewtopic.php?f=8&t=1266
+ - Investigate behaviour of toyota CAS grounding - Dan/Preston/John http://forum.diyefi.org/viewtopic.php?f=58&t=1577
+ - Investigate logic input behaviour of MAX99xx - Fred/Andy/Dan http://forum.diyefi.org/viewtopic.php?f=9&t=1675
  - Verify that TC4427COA can drive 100mA continuous - Dan http://forum.diyefi.org/viewtopic.php?f=9&t=1188
  - Develop new improved SM - Fred http://forum.diyefi.org/viewtopic.php?f=8&t=1232
  - Confirm pin selection for simple bit banged IO like tacho etc: Fred + others: http://forum.diyefi.org/viewtopic.php?f=8&t=1676
