@@ -5,6 +5,8 @@ file and the changed files committed together. After a session of N changes the
 PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
+ - Make VR interface LEDs 2.4k
+ - Add break out pads for IN2+, IN2- and COUT2 on lower max IC
  - DONE, LEFT AS IS FOR NOW! Remove if Peter is happy. Knock, change pin 14 to whatever we agree on on the forum: http://forum.diyefi.org/viewtopic.php?p=26128#p26128
 
 ### SD card sheet changes
@@ -27,7 +29,6 @@ Known issues which don't have a solution 100% nailed down yet.
 
  - Determine best isolation solution with real world testing: ACPL-M71T, adum3201, Si86xx http://forum.diyefi.org/viewtopic.php?f=58&t=1597
  - Power supply page - requires design, discuss http://forum.diyefi.org/viewtopic.php?f=58&t=1478
- - Finalise VR interface LEDs - Dan http://forum.diyefi.org/viewtopic.php?f=58&t=1510
  - Finalise selection of wakeup pin - Fred http://forum.diyefi.org/viewtopic.php?f=8&t=1266
  - Investigate behaviour of toyota CAS grounding - Dan/Preston/John http://forum.diyefi.org/viewtopic.php?f=58&t=1577
  - Investigate logic input behaviour of MAX99xx - Fred/Andy/Dan http://forum.diyefi.org/viewtopic.php?f=9&t=1675
