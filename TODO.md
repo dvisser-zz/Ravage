@@ -5,7 +5,7 @@ file and the changed files committed together. After a session of N changes the
 PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
- - Make VR interface LEDs 2.4k
+ - DONE, Make VR interface LEDs 2.4k
  - Add break out pads for IN2+, IN2- and COUT2 on lower max IC
  - DONE, LEFT AS IS FOR NOW! Remove if Peter is happy. Knock, change pin 14 to whatever we agree on on the forum: http://forum.diyefi.org/viewtopic.php?p=26128#p26128
 
