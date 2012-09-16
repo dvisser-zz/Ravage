@@ -9,6 +9,35 @@ every change as there is no benefit and a binary repository size drawback.
  - DONE, Add break out pads for IN2+, IN2- and COUT2 on lower max IC
  - DONE, LEFT AS IS FOR NOW! Remove if Peter is happy. Knock, change pin 14 to whatever we agree on on the forum: http://forum.diyefi.org/viewtopic.php?p=26128#p26128
 
+### Still To Add/Do
+
+Known issues which don't have a solution 100% nailed down yet.
+
+Essential prioritised stuff for an initial board version:
+
+ 1. Verify that TC4427COA / MC33152V can drive 100mA continuous - Dan http://forum.diyefi.org/viewtopic.php?f=9&t=1188
+ 2. Investigate logic input behaviour of MAX99xx - Fred/Andy/Dan http://forum.diyefi.org/viewtopic.php?f=9&t=1675 and http://forum.diyefi.org/viewtopic.php?f=9&t=1873
+ 3. Determine best isolation solution with real world testing: ACPL-M71T, adum3201, Si86xx http://forum.diyefi.org/viewtopic.php?f=58&t=1597
+ 4. Investigate behaviour of toyota CAS grounding - Dan/Preston/John http://forum.diyefi.org/viewtopic.php?f=58&t=1577
+
+Required for a final board revision to be top quality:
+
+ 1. Confirm pin selection for simple bit banged IO like tacho etc: Fred + others: http://forum.diyefi.org/viewtopic.php?f=8&t=1676
+ 2. Finalise selection of wakeup pin - Fred http://forum.diyefi.org/viewtopic.php?f=8&t=1266
+ 3. Power supply page - requires design, discuss http://forum.diyefi.org/viewtopic.php?f=58&t=1478
+
+Easy stuff to do last:
+
+ 1. Tune the ADC input filters - Fred + consultation
+ 2. Annotate all components in the schematics
+ 3. Add to and correct the NOTES.md file
+
+Stuff that's still in progress, but good enough already:
+
+ 1. DONE! (enough) Develop new improved SM - Fred http://forum.diyefi.org/viewtopic.php?f=8&t=1232
+
+And perhaps more.
+
 ### SD card sheet changes
 
 Discuss all SD card sheet changes before doing anything, skype, IRC and forum: http://forum.diyefi.org/viewtopic.php?f=58&t=1479
@@ -22,24 +51,6 @@ Discuss all SD card sheet changes before doing anything, skype, IRC and forum: h
 
 All pages that are changed must be rechecked and enter another cycle of fix and
 then check or be confirmed good and then locked down.
-
-### Still To Add/Do
-
-Known issues which don't have a solution 100% nailed down yet.
-
- - Determine best isolation solution with real world testing: ACPL-M71T, adum3201, Si86xx http://forum.diyefi.org/viewtopic.php?f=58&t=1597
- - Power supply page - requires design, discuss http://forum.diyefi.org/viewtopic.php?f=58&t=1478
- - Finalise selection of wakeup pin - Fred http://forum.diyefi.org/viewtopic.php?f=8&t=1266
- - Investigate behaviour of toyota CAS grounding - Dan/Preston/John http://forum.diyefi.org/viewtopic.php?f=58&t=1577
- - Investigate logic input behaviour of MAX99xx - Fred/Andy/Dan http://forum.diyefi.org/viewtopic.php?f=9&t=1675
- - Verify that TC4427COA can drive 100mA continuous - Dan http://forum.diyefi.org/viewtopic.php?f=9&t=1188
- - Develop new improved SM - Fred http://forum.diyefi.org/viewtopic.php?f=8&t=1232
- - Confirm pin selection for simple bit banged IO like tacho etc: Fred + others: http://forum.diyefi.org/viewtopic.php?f=8&t=1676
- - Tune the ADC input filters - Fred + consultation
- - Annotate all components in the schematics
- - Add to and correct the NOTES.md file
-
-And perhaps more.
 
 ### Connector pin ordering
 
