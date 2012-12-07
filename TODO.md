@@ -5,9 +5,11 @@ file and the changed files committed together. After a session of N changes the
 PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
- - DONE, Make VR interface LEDs 2.4k
- - DONE, Add break out pads for IN2+, IN2- and COUT2 on lower max IC
- - DONE, LEFT AS IS FOR NOW! Remove if Peter is happy. Knock, change pin 14 to whatever we agree on on the forum: http://forum.diyefi.org/viewtopic.php?p=26128#p26128
+ - Knock, add break-out pad to pin 14 of the TPIC8101
+ - Change output resistors on ignition drives from 200ohm to 150ohm based on Dan's results
+ - Add extra pull up from -ve input on each of the three VR inputs and appropriate docs for 10k >> 1k change when using hall as per this demo schem: http://stuff.fredcooke.com/MAX9926.hall.input.changes.png
+ - Change isolators from PS2911-1-F3-A optos to ADUM3201 digital isolators and add note about ADUM1201 and ISO7421 parts being compatible and acceptable.
+
 
 ### Still To Add/Do
 
@@ -15,10 +17,8 @@ Known issues which don't have a solution 100% nailed down yet.
 
 Essential prioritised stuff for an initial board version:
 
- 1. Verify that TC4427COA / MC33152V can drive 100mA continuous - Dan http://forum.diyefi.org/viewtopic.php?f=9&t=1188
- 2. Investigate logic input behaviour of MAX99xx - Fred/Andy/Dan http://forum.diyefi.org/viewtopic.php?f=9&t=1675 and http://forum.diyefi.org/viewtopic.php?f=9&t=1873
- 3. Determine best isolation solution with real world testing: ACPL-M71T, adum3201, Si86xx http://forum.diyefi.org/viewtopic.php?f=58&t=1597
- 4. Investigate behaviour of toyota CAS grounding - Dan/Preston/John http://forum.diyefi.org/viewtopic.php?f=58&t=1577
+ 1. Investigate behaviour of toyota CAS grounding - Dan/Preston/John http://forum.diyefi.org/viewtopic.php?f=58&t=1577
+ 2. Investigate 5V rail clamping solution to work with the current input clamps http://forum.diyefi.org/viewtopic.php?f=9&t=1912
 
 Required for a final board revision to be top quality:
 
