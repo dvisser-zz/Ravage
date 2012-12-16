@@ -8,7 +8,7 @@ every change as there is no benefit and a binary repository size drawback.
  - DONE, Knock, add break-out pad to pin 14 of the TPIC8101
  - DONE, Change output resistors on ignition drives from 200ohm to 150ohm based on Dan's results
  - Add extra pull up from -ve input on each of the three VR inputs and appropriate docs for 10k >> 1k change when using hall as per this demo schem: http://stuff.fredcooke.com/MAX9926.hall.input.changes.png
- - Change isolators from PS2911-1-F3-A optos to ADUM3201 digital isolators and add note about ADUM1201 and ISO7421 parts being compatible and acceptable.
+ - DONE, Change isolators from PS2911-1-F3-A optos to ADUM3201 digital isolators and add note about ADUM1201 and ISO7421 parts being compatible and acceptable.
 
 
 ### Still To Add/Do
