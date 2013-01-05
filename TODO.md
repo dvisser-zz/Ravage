@@ -17,8 +17,8 @@ Known issues which don't have a solution 100% nailed down yet.
 
 Essential prioritised stuff for an initial board version:
 
- 1. Investigate behaviour of toyota CAS grounding - Dan/Preston/John http://forum.diyefi.org/viewtopic.php?f=58&t=1577
- 2. Investigate 5V rail clamping solution to work with the current input clamps http://forum.diyefi.org/viewtopic.php?f=9&t=1912
+ 1. DONE, Investigate behaviour of toyota CAS grounding - Dan/Preston/John http://forum.diyefi.org/viewtopic.php?f=58&t=1577
+ 2. DONE, Investigate 5V rail clamping solution to work with the current input clamps http://forum.diyefi.org/viewtopic.php?f=9&t=1912
 
 Required for a final board revision to be top quality:
 
