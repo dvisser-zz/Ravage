@@ -5,20 +5,16 @@ file and the changed files committed together. After a session of N changes the
 PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
- - DONE, Knock, add break-out pad to pin 14 of the TPIC8101
- - DONE, Change output resistors on ignition drives from 200ohm to 150ohm based on Dan's results
- - DONE, Add extra pull up from -ve input on each of the three VR inputs and appropriate docs for 10k >> 1k change when using hall as per this demo schem: http://stuff.fredcooke.com/MAX9926.hall.input.changes.png
- - DONE, Change isolators from PS2911-1-F3-A optos to ADUM3201 digital isolators and add note about ADUM1201 and ISO7421 parts being compatible and acceptable.
-
+ - Change both instances of "should" on VR input page to "must" as without this change it will not work correctly or at all.
+ - Remove 5V6 Zener from power supply sheet and replace with circuit shown here: http://stuff.fredcooke.com/RavagePowerSupply5VClampCircuit.png tuned to 5.15V so as to allow 0.35V of schottky diode drop with a fault applied to an input pin or 5V out shorted to 12V through a ~500mA polyfuse.
+ - Change note on power supply page to "NOTE: Resistors R? and R? must be 0.1% tolerance or better."
+ - Verify that wakeup/dual supply will not prevent 0.1 from working acceptably - Fred and Dan
+ - Spend some time to properly tune the ADC filter capacitor values - Fred and Dan and others
+ - Experiment with layouts to validate pin arrangement selection for header and main connector, and decide if Knock/RS232/Dual-reg setup is possible to fit for 0.1
 
 ### Still To Add/Do
 
 Known issues which don't have a solution 100% nailed down yet.
-
-Essential prioritised stuff for an initial board version:
-
- 1. DONE, Investigate behaviour of toyota CAS grounding - Dan/Preston/John http://forum.diyefi.org/viewtopic.php?f=58&t=1577
- 2. DONE, Investigate 5V rail clamping solution to work with the current input clamps http://forum.diyefi.org/viewtopic.php?f=9&t=1912
 
 Required for a final board revision to be top quality:
 
@@ -97,22 +93,22 @@ it will get locked. That is to say, no further changes to that sheet's source
 
 Locked sheets will be listed here as they are finalised:
 
- 1.  CPU and buses, etc @ NO pending cosmetic changes and movements
- 2.  Power supplies @ NO pending discussion and design
- 3.  USB communications @ NO pending testing
- 4.  RS232 communications @ 247e1f109145382aaa98ed5c90c7676b9f4068cd
- 5.  RPM conditioned inputs @ NO pending testing
- 6.  Core analogue inputs @ NO pending value selection
- 7.  Extra analogue inputs @ NO pending value selection
- 8.  Digital and wake up inputs @ NO pending wake up testing
- 9.  Knock sensor inputs @ NO pending input style change
- 10. Igniter output drivers @ NO pending testing
- 11. Injector output drivers @ 7ad534dc22ba7a4618d42d22ae2bb547ddda230f
- 12. GP low side drivers @ 0e0ec7b1f4f0095ec0caf7929a33b819e120481e
- 13. 3-wire ISCV drivers @ 7ad534dc22ba7a4618d42d22ae2bb547ddda230f
- 14. SD card slot @ NO pending multiple changes
- 15. Spare IO Header @ NO pending possible rearrangement
- 16. Connector pin out @ NO pending pin rearrangement
+ - Connector pin out @ NO pending pin rearrangement
+ - Spare IO Header @ NO pending possible rearrangement
+ - Core analogue inputs @ NO pending value selection
+ - Extra analogue inputs @ NO pending value selection
+ - USE 0.1 TO TEST: Digital and wake up inputs @ NO pending wake up testing
+ - CPU and buses, etc @ 14eae84ad1f2c094e9d5b6bee46bd3429c172d74
+ - USB communications @ e70d478d8635a083402ecfb5f5f076b4fc3c8185
+ - RS232 communications @ 247e1f109145382aaa98ed5c90c7676b9f4068cd
+ - RPM conditioned inputs @ d9010de9a04837de180d5ab0ac80486f6b1c0f9a
+ - Knock sensor inputs @ 1450ad98dc2e1c864d0d5789b42a16420bbd773e
+ - Igniter output drivers @ fc591f538e7f880f76d490ce6b23da58f4e1e481
+ - Injector output drivers @ 7ad534dc22ba7a4618d42d22ae2bb547ddda230f
+ - GP low side drivers @ 0e0ec7b1f4f0095ec0caf7929a33b819e120481e
+ - 3-wire ISCV drivers @ 7ad534dc22ba7a4618d42d22ae2bb547ddda230f
+ - OK FOR 0.1 @ 32f0d31e1 But not final. Power supplies @ NO pending discussion and design
+ - UNUSED FOR 0.1: SD card slot @ NO pending multiple changes
 
 ### PDF Sheet Ordering
 
