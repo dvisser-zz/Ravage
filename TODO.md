@@ -7,7 +7,7 @@ every change as there is no benefit and a binary repository size drawback.
 
  - DONE, Change both instances of "should" on VR input page to "must" as without this change it will not work correctly or at all.
  - DONE, Remove 5V6 Zener from power supply sheet and replace with circuit shown here: http://stuff.fredcooke.com/RavagePowerSupply5VClampCircuit.png tuned to 5.15V so as to allow 0.35V of schottky diode drop with a fault applied to an input pin or 5V out shorted to 12V through a ~500mA polyfuse.
- - Change note on power supply page to "NOTE: Resistors R? and R? must be 0.1% tolerance or better."
+ - DONE, Change note on power supply page to "NOTE: Resistors R? and R? must be 0.1% tolerance or better."
  - Spend some time to properly tune the ADC filter capacitor values - Fred and Dan and others
  - Experiment with layouts to validate pin arrangement selection for header, and decide if Knock/RS232/Dual-reg setup is possible to fit for 0.1
 
