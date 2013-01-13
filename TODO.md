@@ -8,9 +8,8 @@ every change as there is no benefit and a binary repository size drawback.
  - Change both instances of "should" on VR input page to "must" as without this change it will not work correctly or at all.
  - Remove 5V6 Zener from power supply sheet and replace with circuit shown here: http://stuff.fredcooke.com/RavagePowerSupply5VClampCircuit.png tuned to 5.15V so as to allow 0.35V of schottky diode drop with a fault applied to an input pin or 5V out shorted to 12V through a ~500mA polyfuse.
  - Change note on power supply page to "NOTE: Resistors R? and R? must be 0.1% tolerance or better."
- - Verify that wakeup/dual supply will not prevent 0.1 from working acceptably - Fred and Dan
  - Spend some time to properly tune the ADC filter capacitor values - Fred and Dan and others
- - Experiment with layouts to validate pin arrangement selection for header and main connector, and decide if Knock/RS232/Dual-reg setup is possible to fit for 0.1
+ - Experiment with layouts to validate pin arrangement selection for header, and decide if Knock/RS232/Dual-reg setup is possible to fit for 0.1
 
 ### Still To Add/Do
 
@@ -93,11 +92,11 @@ it will get locked. That is to say, no further changes to that sheet's source
 
 Locked sheets will be listed here as they are finalised:
 
- - Connector pin out @ NO pending pin rearrangement
  - Spare IO Header @ NO pending possible rearrangement
  - Core analogue inputs @ NO pending value selection
  - Extra analogue inputs @ NO pending value selection
- - USE 0.1 TO TEST: Digital and wake up inputs @ NO pending wake up testing
+ - USE 0.1 TO TEST: @ b36bb33d Digital and wake up inputs @ NO pending wake up testing
+ - Connector pin out @ ecdaed700b58eaaf16ad0ddf4c48198efca5d85a
  - CPU and buses, etc @ 14eae84ad1f2c094e9d5b6bee46bd3429c172d74
  - USB communications @ e70d478d8635a083402ecfb5f5f076b4fc3c8185
  - RS232 communications @ 247e1f109145382aaa98ed5c90c7676b9f4068cd
