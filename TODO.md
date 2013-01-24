@@ -5,9 +5,6 @@ file and the changed files committed together. After a session of N changes the
 PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
- - DONE, Change both instances of "should" on VR input page to "must" as without this change it will not work correctly or at all.
- - DONE, Remove 5V6 Zener from power supply sheet and replace with circuit shown here: http://stuff.fredcooke.com/RavagePowerSupply5VClampCircuit.png tuned to 5.15V so as to allow 0.35V of schottky diode drop with a fault applied to an input pin or 5V out shorted to 12V through a ~500mA polyfuse.
- - DONE, Change note on power supply page to "NOTE: Resistors R? and R? must be 0.1% tolerance or better."
  - Spend some time to properly tune the ADC filter capacitor values - Fred and Dan and others
  - Experiment with layouts to validate pin arrangement selection for header, and decide if Knock/RS232/Dual-reg setup is possible to fit for 0.1
 
@@ -100,13 +97,13 @@ Locked sheets will be listed here as they are finalised:
  - CPU and buses, etc @ 14eae84ad1f2c094e9d5b6bee46bd3429c172d74
  - USB communications @ e70d478d8635a083402ecfb5f5f076b4fc3c8185
  - RS232 communications @ 247e1f109145382aaa98ed5c90c7676b9f4068cd
- - RPM conditioned inputs @ d9010de9a04837de180d5ab0ac80486f6b1c0f9a
+ - RPM conditioned inputs @ c40a0885fad16cf92aaf213e950141aef8fa67e1
  - Knock sensor inputs @ 1450ad98dc2e1c864d0d5789b42a16420bbd773e
  - Igniter output drivers @ fc591f538e7f880f76d490ce6b23da58f4e1e481
  - Injector output drivers @ 7ad534dc22ba7a4618d42d22ae2bb547ddda230f
  - GP low side drivers @ 0e0ec7b1f4f0095ec0caf7929a33b819e120481e
  - 3-wire ISCV drivers @ 7ad534dc22ba7a4618d42d22ae2bb547ddda230f
- - OK FOR 0.1 @ 32f0d31e1 But not final. Power supplies @ NO pending discussion and design
+ - OK FOR 0.1 @ e50be379d But not final. Power supplies @ NO pending discussion and design
  - UNUSED FOR 0.1: SD card slot @ NO pending multiple changes
 
 ### PDF Sheet Ordering
