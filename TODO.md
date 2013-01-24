@@ -5,44 +5,11 @@ file and the changed files committed together. After a session of N changes the
 PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
+ - Dan should remove SD card sheet using altium techniques to avoid corruption
+ - Annotate all components in the schematics
+ - Fred should update this file with hashes and tag the repo
  - Spend some time to properly tune the ADC filter capacitor values - Fred and Dan and others
  - Experiment with layouts to validate pin arrangement selection for header, and decide if Knock/RS232/Dual-reg setup is possible to fit for 0.1
-
-### Still To Add/Do
-
-Known issues which don't have a solution 100% nailed down yet.
-
-Required for a final board revision to be top quality:
-
- 1. Confirm pin selection for simple bit banged IO like tacho etc: Fred + others: http://forum.diyefi.org/viewtopic.php?f=8&t=1676
- 2. Finalise selection of wakeup pin - Fred http://forum.diyefi.org/viewtopic.php?f=8&t=1266
- 3. Power supply page - requires design, discuss http://forum.diyefi.org/viewtopic.php?f=58&t=1478
-
-Easy stuff to do last:
-
- 1. Tune the ADC input filters - Fred + consultation
- 2. Annotate all components in the schematics
- 3. Add to and correct the NOTES.md file
-
-Stuff that's still in progress, but good enough already:
-
- 1. DONE! (enough) Develop new improved SM - Fred http://forum.diyefi.org/viewtopic.php?f=8&t=1232
-
-And perhaps more.
-
-### SD card sheet changes
-
-Discuss all SD card sheet changes before doing anything, skype, IRC and forum: http://forum.diyefi.org/viewtopic.php?f=58&t=1479
-
- - Improve layout of SD card sheet - Preston wants to do this
- - Move 3.3V regulator to 12V input such that sharp current changes don't affect our analogue stuff
- - Use regulator with enable input and parallel with analogue enable on 5V setup
- - Reduce post reg capacitor to 47uF tantalum
- - Change 1.0uF to 0.1uF ceramics on both sides of 3.3V reg
- - Move all 3.3V power supply caps to power supply sheet
-
-All pages that are changed must be rechecked and enter another cycle of fix and
-then check or be confirmed good and then locked down.
 
 ### Connector pin ordering
 
@@ -104,7 +71,6 @@ Locked sheets will be listed here as they are finalised:
  - GP low side drivers @ 0e0ec7b1f4f0095ec0caf7929a33b819e120481e
  - 3-wire ISCV drivers @ 7ad534dc22ba7a4618d42d22ae2bb547ddda230f
  - OK FOR 0.1 @ e50be379d But not final. Power supplies @ NO pending discussion and design
- - UNUSED FOR 0.1: SD card slot @ NO pending multiple changes
 
 ### PDF Sheet Ordering
 
@@ -125,19 +91,16 @@ should be kept consistent on every commit. Preferred ordering is as follows.
  11. Injector output drivers
  12. GP low side drivers
  13. 3-wire ISCV drivers
- 14. SD card slot
- 15. Spare IO Header
- 16. Connector pin out
+ 14. Spare IO Header
+ 15. Connector pin out
 
 ### Space Constraints
 
 Due to the target board size and the level of things included so far, some
 items could get cut when layout starts and we start getting a feel for
-realistic limitations. The current plan is a 2-layer board with all features
-that are currently in the schematics. I will list the possible changes below.
+realistic limitations. The current plan is a 4-layer board with all features
+from the schematics, except on-board SD card slot. Possible changes below:
 
- - Change from 2-layer to 4-layer. Benefits more compact, better noise resistance. Drawbacks, more expensive, mildly less hackable.
- - Remove SD card slot and 3.3V power supply components
  - Remove RS232 interface for LC-1 and other products
  - Remove knock sensing interface circuit
  - Drop always-on support and RTC in favour of a simpler key switched design
