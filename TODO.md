@@ -5,8 +5,8 @@ file and the changed files committed together. After a session of N changes the
 PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
- - Dan should remove SD card sheet using altium techniques to avoid corruption
- - Annotate all components in the schematics
+ - DONE, Dan should remove SD card sheet using altium techniques to avoid corruption
+ - DONE, Annotate all components in the schematics
  - Fred should update this file with hashes and tag the repo
  - Spend some time to properly tune the ADC filter capacitor values - Fred and Dan and others
  - Experiment with layouts to validate pin arrangement selection for header, and decide if Knock/RS232/Dual-reg setup is possible to fit for 0.1
