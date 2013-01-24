@@ -5,10 +5,10 @@
 *.SCHDOCPreview
 *.PrjPCBStructure
 *.PcbDoc.htm/Altium/
-*/Project\ Logs\ for\ 
+Project\ Logs\ */*
 */Altium/
 */History/
-*/Project\ Outputs*\* 
+Project\ Outputs\ */*
 */Altium/History/Altium/
 */History/Thumbs.db
 *.OutJob
