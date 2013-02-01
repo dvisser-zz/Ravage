@@ -5,8 +5,37 @@ file and the changed files committed together. After a session of N changes the
 PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
- - Spend some time to properly tune the ADC filter capacitor values - Fred and Dan and others
- - Experiment with layouts to validate pin arrangement selection for header, and decide if Knock/RS232/Dual-reg setup is possible to fit for 0.1
+ - Add minimum voltages to all capacitors eg 10V+ for those on 5V rails
+ - Change R? on power supplies sheet from 600R to 604R due to availability
+ - Fix LED annotations (some are D1, D2, etc and others are +5VLED, etc) these should all be Dx but retain a description/purpose for each as a note or similar.
+ - Fix Schottky Diode annotations so that the "dual package" is used (currently have two designators per dual diode package) AND label them with their part number. Note, this shouldn't change the look of the schematic.
+ - Update polarised capacitor symbols to non-polarised as required (using MLCC's now instead of tantalums).
+ - Add a 0.1uF cap in parallel with the 4.7uF cap on the knock chip and add a note to the 4.7uF cap that it can be ommitted from the design if in close proximity to another largish reservoir cap.
+ - Add note to a note next to R? in the CEL circuit that the 1k value is to complement the 2.4k next to it and provide a stiffer initial pull up (until the LED drop renders it inactive). Also to be brighter/stronger as it's the CEL output, too.
+ - Change the resistor on the 5V switched LED on the power supply paged to 2.4k
+ - Add note next to R?, R?, R? on USB page that 1k is chosen to be brighter as the brief flashes of serial TX/RX can be hard to spot if not bright.
+ - On the VR page the left most resistor should have a value added @ 2.4k (currently has ??? as a value)
+ - On the digital input page, the LED on the wakeup input should have a new resistor added in parallel at 2.4k value as the LED will prevent the existing 2.4k resistor pulling low past its forward drop.
+ - On ignitor page, add a note next to the 6 LEDs explaining that they need to work at 5V with sufficient brightness, and will be brighter with 12V ignition outputs.
+ - On the ISCV page the two 1k resistors nearest to the lower fet need a note explaining that only one should be installed, and why you'd choose each.
+ - Change zeners on digital input page to 4.7V variants to remove pull up on 5V rail.
+ - Remove the middle resistor from each digital input circuit, no longer required with lower clamp zener.
+ - Dan and Fred (on skype) review notes in schematics and notes file to determine if any adjustments are necessary to conform with defaults in file, exceptions on schems
+ - Make clamp transistor symbol be a darlington symbol
+ - Add the value of the polyfuse to the power supply sheet, and make it 0.35A such that the trip current can be handled by the regulator during a to-ground short. Maybe 1812L035/30 from littlefuse, which also has a 30V rating, unlike the 0.5A part, but has 0.4ohm resistance, unlike the 0.15ohm that the 0.5A part has. Still good enough, though.
+ - Deferrable: Spend some time to properly tune the ADC filter capacitor values - Fred and Dan and others
+ - Deferrable: Experiment with layouts to validate pin arrangement selection for header, and decide if Knock/RS232/Dual-reg setup is possible to fit for 0.1
+
+### Once branched for layout-0.1-alpha (RC2)
+
+Fred and Dan to do this together like last time in a session.
+
+ - Remove the SD card sheet, 3.3V power supply, and X the pins on the CPU sheet, etc.
+ - Annotate the schematics with designators
+ - Generate new PDF for review
+ - Update the TODO to reflect current goals on branch and new single hash of all files post annotation
+ - Tag repository as Schem-0.1-alpha-RC2
+ - Import BOM from RC1, adjust references to suit new schematic annotations, commit BOM (do we need PDF of this? I think not.)
 
 ### Still To Add/Do
 

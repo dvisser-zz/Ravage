@@ -16,4 +16,5 @@ from those defaults.
  - Ferrite bead to 5V USB input before caps to prevent USB power noise corrupting comms should be something like this: http://nz.element14.com/murata/blm18pg300sn1d/ferrite-bead-0603-case-30ohm/dp/1515741RL
  - Analogue and Digital input schottky diodes are to be BAT721S.
  - 1k input resistor and 5v6 zener on digital input circuits should be rated to 250mW minimum.
+ - All LEDs should have 2.4k resistors except where noted in the schematics.
 
