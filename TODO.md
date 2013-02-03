@@ -5,7 +5,11 @@ file and the changed files committed together. After a session of N changes the
 PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
- - Add minimum voltages to all capacitors eg 10V+ for those on 5V rails
+ - Add note on power supply page, explaining why the 20k resistor is 20k, IIRC, the input to that reg has a current max limit.
+ - Add note in upper left corner of CPU sheet near caps, explaining that they are recommended in AN3262. 
+ - Make GND to unnamed GND on Power Supplies sheet, be like the sensor GND is shown.
+ - Move bulk input capacitance on Power Supplier sheet to be more independant of both regs and feed both circuits from it.	
+ - Add minimum voltages to all capacitors eg 10V+ for those on 5V rails.
  - Change R? on power supplies sheet from 600R to 604R due to availability
  - Fix LED annotations (some are D1, D2, etc and others are +5VLED, etc) these should all be Dx but retain a description/purpose for each as a note or similar.
  - Fix Schottky Diode annotations so that the "dual package" is used (currently have two designators per dual diode package) AND label them with their part number. Note, this shouldn't change the look of the schematic.
