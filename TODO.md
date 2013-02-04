@@ -18,7 +18,7 @@ every change as there is no benefit and a binary repository size drawback.
  - DONE, Add note to a note next to R? in the CEL circuit that the 1k value is to complement the 2.4k next to it and provide a stiffer initial pull up (until the LED drop renders it inactive). Also to be brighter stronger as it's the CEL output, too.
  - DONE, Change the resistor on the 5V switched LED on the power supply paged to 2.4k
  - DONE, Add note next to R?, R?, R? on USB page that 1k is chosen to be brighter as the brief flashes of serial TX/RX can be hard to spot if not bright.
- - On the VR page the left most resistor should have a value added @ 2.4k (currently has ??? as a value)
+ - DONE, On the VR page the left most resistor should have a value added @ 2.4k (currently has ??? as a value)
  - DONE, On the digital input page, the LED on the wakeup input should have a new resistor added in parallel at 2.4k value as the LED will prevent the existing 2.4k resistor pulling low past its forward drop.
  - On ignitor page, add a note next to the 6 LEDs explaining that they need to work at 5V with sufficient brightness, and will be brighter with 12V ignition outputs.
  - On the ISCV page the two 1k resistors nearest to the lower fet need a note explaining that only one should be installed, and why you'd choose each.
