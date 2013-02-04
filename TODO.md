@@ -22,8 +22,8 @@ every change as there is no benefit and a binary repository size drawback.
  - On the digital input page, the LED on the wakeup input should have a new resistor added in parallel at 2.4k value as the LED will prevent the existing 2.4k resistor pulling low past its forward drop.
  - On ignitor page, add a note next to the 6 LEDs explaining that they need to work at 5V with sufficient brightness, and will be brighter with 12V ignition outputs.
  - On the ISCV page the two 1k resistors nearest to the lower fet need a note explaining that only one should be installed, and why you'd choose each.
- - Change zeners on digital input page to 4.7V variants to remove pull up on 5V rail.
- - Remove the middle resistor from each digital input circuit, no longer required with lower clamp zener.
+ - DONE, Change zeners on digital input page to 4.7V variants to remove pull up on 5V rail.
+ - DONE, Remove the middle resistor from each digital input circuit, no longer required with lower clamp zener.
  - Dan and Fred (on skype) review notes in schematics and notes file to determine if any adjustments are necessary to conform with defaults in file, exceptions on schems
  - DONE, Make clamp transistor symbol be a darlington symbol
  - DONE, Add the value of the polyfuse to the power supply sheet, and make it 0.35A such that the trip current can be handled by the regulator during a to-ground short. Maybe 1812L035/30 from littlefuse, which also has a 30V rating, unlike the 0.5A part, but has 0.4ohm resistance, unlike the 0.15ohm that the 0.5A part has. Still good enough, though.
