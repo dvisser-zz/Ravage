@@ -5,10 +5,6 @@ file and the changed files committed together. After a session of N changes the
 PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
- - DONE, Raise voltage of caps that are not protected to 25V or 35V (at least all of the ADC inputs, and knock inputs are too low)
- - DONE, Correct note on ISCV page to state that it allows independent use of the FET for normal purposes. (SW inversion probably isn't going to happen)
- - DONE, Correct note on USB LEDs by changing repeatedly to intermittently.
- - Dan and Fred (on skype) review notes in schematics and notes file to determine if any adjustments are necessary to conform with defaults in file, exceptions on schems
  - Deferrable: Spend some time to properly tune the ADC filter capacitor values - Fred and Dan and others
  - Deferrable: Experiment with layouts to validate pin arrangement selection for header, and decide if Knock/RS232/Dual-reg setup is possible to fit for 0.1
 
