@@ -5,18 +5,18 @@ file and the changed files committed together. After a session of N changes the
 PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
- - Add note on power supply page, explaining why the 20k resistor is 20k, IIRC, the input to that reg has a current max limit.
+ - DONE, Add note on power supply page, explaining why the 20k resistor is 20k, IIRC, the input to that reg has a current max limit.
  - Add note in upper left corner of CPU sheet near caps, explaining that they are recommended in AN3262. 
- - Make GND to unnamed GND on Power Supplies sheet, be like the sensor GND is shown.
- - Move bulk input capacitance on Power Supplier sheet to be more independant of both regs and feed both circuits from it.	
+ - DONE, Make GND to unnamed GND on Power Supplies sheet, be like the sensor GND is shown.
+ - DONE, Move bulk input capacitance on Power Supplier sheet to be more independant of both regs and feed both circuits from it.	
  - Add minimum voltages to all capacitors eg 10V+ for those on 5V rails.
- - Change R? on power supplies sheet from 600R to 604R due to availability
+ - DONE, Change R? on power supplies sheet from 600R to 604R due to availability
  - Fix LED annotations (some are D1, D2, etc and others are +5VLED, etc) these should all be Dx but retain a description/purpose for each as a note or similar.
  - Fix Schottky Diode annotations so that the "dual package" is used (currently have two designators per dual diode package) AND label them with their part number. Note, this shouldn't change the look of the schematic.
  - Update polarised capacitor symbols to non-polarised as required (using MLCC's now instead of tantalums).
  - Add a 0.1uF cap in parallel with the 4.7uF cap on the knock chip and add a note to the 4.7uF cap that it can be ommitted from the design if in close proximity to another largish reservoir cap.
  - Add note to a note next to R? in the CEL circuit that the 1k value is to complement the 2.4k next to it and provide a stiffer initial pull up (until the LED drop renders it inactive). Also to be brighter/stronger as it's the CEL output, too.
- - Change the resistor on the 5V switched LED on the power supply paged to 2.4k
+ - DONE, Change the resistor on the 5V switched LED on the power supply paged to 2.4k
  - Add note next to R?, R?, R? on USB page that 1k is chosen to be brighter as the brief flashes of serial TX/RX can be hard to spot if not bright.
  - On the VR page the left most resistor should have a value added @ 2.4k (currently has ??? as a value)
  - On the digital input page, the LED on the wakeup input should have a new resistor added in parallel at 2.4k value as the LED will prevent the existing 2.4k resistor pulling low past its forward drop.
@@ -25,8 +25,8 @@ every change as there is no benefit and a binary repository size drawback.
  - Change zeners on digital input page to 4.7V variants to remove pull up on 5V rail.
  - Remove the middle resistor from each digital input circuit, no longer required with lower clamp zener.
  - Dan and Fred (on skype) review notes in schematics and notes file to determine if any adjustments are necessary to conform with defaults in file, exceptions on schems
- - Make clamp transistor symbol be a darlington symbol
- - Add the value of the polyfuse to the power supply sheet, and make it 0.35A such that the trip current can be handled by the regulator during a to-ground short. Maybe 1812L035/30 from littlefuse, which also has a 30V rating, unlike the 0.5A part, but has 0.4ohm resistance, unlike the 0.15ohm that the 0.5A part has. Still good enough, though.
+ - DONE, Make clamp transistor symbol be a darlington symbol
+ - DONE, Add the value of the polyfuse to the power supply sheet, and make it 0.35A such that the trip current can be handled by the regulator during a to-ground short. Maybe 1812L035/30 from littlefuse, which also has a 30V rating, unlike the 0.5A part, but has 0.4ohm resistance, unlike the 0.15ohm that the 0.5A part has. Still good enough, though.
  - Deferrable: Spend some time to properly tune the ADC filter capacitor values - Fred and Dan and others
  - Deferrable: Experiment with layouts to validate pin arrangement selection for header, and decide if Knock/RS232/Dual-reg setup is possible to fit for 0.1
 
