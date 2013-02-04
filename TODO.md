@@ -19,7 +19,7 @@ every change as there is no benefit and a binary repository size drawback.
  - DONE, Change the resistor on the 5V switched LED on the power supply paged to 2.4k
  - Add note next to R?, R?, R? on USB page that 1k is chosen to be brighter as the brief flashes of serial TX/RX can be hard to spot if not bright.
  - On the VR page the left most resistor should have a value added @ 2.4k (currently has ??? as a value)
- - On the digital input page, the LED on the wakeup input should have a new resistor added in parallel at 2.4k value as the LED will prevent the existing 2.4k resistor pulling low past its forward drop.
+ - DONE, On the digital input page, the LED on the wakeup input should have a new resistor added in parallel at 2.4k value as the LED will prevent the existing 2.4k resistor pulling low past its forward drop.
  - On ignitor page, add a note next to the 6 LEDs explaining that they need to work at 5V with sufficient brightness, and will be brighter with 12V ignition outputs.
  - On the ISCV page the two 1k resistors nearest to the lower fet need a note explaining that only one should be installed, and why you'd choose each.
  - DONE, Change zeners on digital input page to 4.7V variants to remove pull up on 5V rail.
