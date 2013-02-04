@@ -6,7 +6,7 @@ PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
  - DONE, Add note on power supply page, explaining why the 20k resistor is 20k, IIRC, the input to that reg has a current max limit.
- - Add note in upper left corner of CPU sheet near caps, explaining that they are recommended in AN3262. 
+ - DONE, Add note in upper left corner of CPU sheet near caps, explaining that they are recommended in AN3262. 
  - DONE, Make GND to unnamed GND on Power Supplies sheet, be like the sensor GND is shown.
  - DONE, Move bulk input capacitance on Power Supplier sheet to be more independant of both regs and feed both circuits from it.	
  - Add minimum voltages to all capacitors eg 10V+ for those on 5V rails.
@@ -15,7 +15,7 @@ every change as there is no benefit and a binary repository size drawback.
  - Fix Schottky Diode annotations so that the "dual package" is used (currently have two designators per dual diode package) AND label them with their part number. Note, this shouldn't change the look of the schematic.
  - Update polarised capacitor symbols to non-polarised as required (using MLCC's now instead of tantalums).
  - Add a 0.1uF cap in parallel with the 4.7uF cap on the knock chip and add a note to the 4.7uF cap that it can be ommitted from the design if in close proximity to another largish reservoir cap.
- - Add note to a note next to R? in the CEL circuit that the 1k value is to complement the 2.4k next to it and provide a stiffer initial pull up (until the LED drop renders it inactive). Also to be brighter/stronger as it's the CEL output, too.
+ - DONE, Add note to a note next to R? in the CEL circuit that the 1k value is to complement the 2.4k next to it and provide a stiffer initial pull up (until the LED drop renders it inactive). Also to be brighter stronger as it's the CEL output, too.
  - DONE, Change the resistor on the 5V switched LED on the power supply paged to 2.4k
  - Add note next to R?, R?, R? on USB page that 1k is chosen to be brighter as the brief flashes of serial TX/RX can be hard to spot if not bright.
  - On the VR page the left most resistor should have a value added @ 2.4k (currently has ??? as a value)
