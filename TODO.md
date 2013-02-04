@@ -6,7 +6,7 @@ PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
  - DONE, Raise voltage of caps that are not protected to 25V or 35V (at least all of the ADC inputs, and knock inputs are too low)
- - Correct note on ISCV page to state that it allows independent use of the FET for normal purposes. (SW inversion probably isn't going to happen)
+ - DONE, Correct note on ISCV page to state that it allows independent use of the FET for normal purposes. (SW inversion probably isn't going to happen)
  - Correct note on USB LEDs by changing repeatedly to intermittently.
  - Dan and Fred (on skype) review notes in schematics and notes file to determine if any adjustments are necessary to conform with defaults in file, exceptions on schems
  - Deferrable: Spend some time to properly tune the ADC filter capacitor values - Fred and Dan and others
