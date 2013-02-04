@@ -11,7 +11,7 @@ every change as there is no benefit and a binary repository size drawback.
  - DONE, Move bulk input capacitance on Power Supplier sheet to be more independant of both regs and feed both circuits from it.	
  - DONE, Add minimum voltages to all capacitors eg 10V+ for those on 5V rails.
  - DONE, Change R? on power supplies sheet from 600R to 604R due to availability
- - Fix LED annotations (some are D1, D2, etc and others are +5VLED, etc) these should all be Dx but retain a description/purpose for each as a note or similar.
+ - DONE, Fix LED annotations (some are D1, D2, etc and others are +5VLED, etc) these should all be Dx but retain a description/purpose for each as a note or similar.
  - DONE, Fix Schottky Diode annotations so that the "dual package" is used (currently have two designators per dual diode package) AND label them with their part number. Note, this shouldn't change the look of the schematic.
  - DONE, Update polarised capacitor symbols to non-polarised as required (using MLCC's now instead of tantalums).
  - DONE, Add a 0.1uF cap in parallel with the 4.7uF cap on the knock chip and add a note to the 4.7uF cap that it can be ommitted from the design if in close proximity to another largish reservoir cap.
