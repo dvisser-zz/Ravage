@@ -9,11 +9,11 @@ every change as there is no benefit and a binary repository size drawback.
  - DONE, Add note in upper left corner of CPU sheet near caps, explaining that they are recommended in AN3262. 
  - DONE, Make GND to unnamed GND on Power Supplies sheet, be like the sensor GND is shown.
  - DONE, Move bulk input capacitance on Power Supplier sheet to be more independant of both regs and feed both circuits from it.	
- - Add minimum voltages to all capacitors eg 10V+ for those on 5V rails.
+ - DONE, Add minimum voltages to all capacitors eg 10V+ for those on 5V rails.
  - DONE, Change R? on power supplies sheet from 600R to 604R due to availability
  - Fix LED annotations (some are D1, D2, etc and others are +5VLED, etc) these should all be Dx but retain a description/purpose for each as a note or similar.
  - DONE, Fix Schottky Diode annotations so that the "dual package" is used (currently have two designators per dual diode package) AND label them with their part number. Note, this shouldn't change the look of the schematic.
- - Update polarised capacitor symbols to non-polarised as required (using MLCC's now instead of tantalums).
+ - DONE, Update polarised capacitor symbols to non-polarised as required (using MLCC's now instead of tantalums).
  - DONE, Add a 0.1uF cap in parallel with the 4.7uF cap on the knock chip and add a note to the 4.7uF cap that it can be ommitted from the design if in close proximity to another largish reservoir cap.
  - DONE, Add note to a note next to R? in the CEL circuit that the 1k value is to complement the 2.4k next to it and provide a stiffer initial pull up (until the LED drop renders it inactive). Also to be brighter stronger as it's the CEL output, too.
  - DONE, Change the resistor on the 5V switched LED on the power supply paged to 2.4k
