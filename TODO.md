@@ -7,7 +7,7 @@ every change as there is no benefit and a binary repository size drawback.
 
  - DONE, Change the 0.1uF cap on both MAP sensors to 47pF value in line with datasheet. This is a rollback of a previous eroneous change.
  - Change the USB connector from mini to micro, taking care of pinouts which IIRC vary.
- - Change 5k VR input resistors from 5k to 5k1, due to availability. 
+ - DONE, Change 5k VR input resistors from 5k to 5k1, due to availability. 
  - Deferrable: Spend some time to properly tune the ADC filter capacitor values - Fred and Dan and others
  - Deferrable: Experiment with layouts to validate pin arrangement selection for header, and decide if Knock/RS232/Dual-reg setup is possible to fit for 0.1
 
