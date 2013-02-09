@@ -13,7 +13,9 @@ every change as there is no benefit and a binary repository size drawback.
 Fred and Dan to do this together like last time in a session.
 
  - Remove the SD card sheet, 3.3V power supply, and X the pins on the CPU sheet, etc.
+ - Correct annotation sheet order before annotating
  - Annotate the schematics with designators
+ - Update all notes with designators to match new numbering (remove ?)
  - Generate new PDF for review
  - Update the TODO to reflect current goals on branch and new single hash of all files post annotation
  - Tag repository as Schem-0.1-alpha-RC2
