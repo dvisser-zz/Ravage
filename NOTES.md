@@ -16,4 +16,6 @@ from those defaults.
  - Ferrite bead to 5V USB input before caps to prevent USB power noise corrupting comms should be something like this: http://nz.element14.com/murata/blm18pg300sn1d/ferrite-bead-0603-case-30ohm/dp/1515741RL
  - 1k input resistor and 5v6 zener on digital input circuits should be rated to 250mW minimum.
  - All LEDs should have 2.4k resistors except where noted in the schematics.
+ - For best ADC accuracy, ensure that "+5V SWITCHED" voltage is less than or equal to "+5V MICRO" 
+ - After construction measure quiescent current and ensure that it's below ~100mA. If not the clamp and power supply are probably fighting. Look at the 5V rail, if high, tweak resistors to trim it down, if not, tweak clamp resistors to trim it up.
 
