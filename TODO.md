@@ -6,7 +6,7 @@ PDF should be updated and pushed. The PDF should not be updated with each and
 every change as there is no benefit and a binary repository size drawback.
 
  - Fred and Dan to discuss/review reverse polarity behaviour of the current schematic and connection topology. Next skype.
- - Fix the load jumper and CEL circuit by adding a resistor between it and the CPU like this: http://stuff.fredcooke.com/LoadAndCELCorrectJumperTopology.png
+ - DONE, Fix the load jumper and CEL circuit by adding a resistor between it and the CPU like this: http://stuff.fredcooke.com/LoadAndCELCorrectJumperTopology.png
  - Deferrable: Spend some time to properly tune the ADC filter capacitor values - Fred and Dan and others
  - Deferrable: Experiment with layouts to validate pin arrangement selection for header, and decide if Knock/RS232/Dual-reg setup is possible to fit for 0.1
 
